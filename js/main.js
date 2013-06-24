@@ -1,8 +1,10 @@
 $(document).ready(function() {
-   $('#slider-id').liquidSlider({
-    autoSlide:false,
-    autoHeight:false
-  });
+	if(window.innerWidth > 786) {
+		$('#slider-id').liquidSlider({
+			autoSlide:false,
+			autoHeight:false
+		});
+	}
 
 	if(! Detector.webgl) {
 
@@ -11,9 +13,18 @@ $(document).ready(function() {
 
 	} else {
 		hasWebgl = true;
+		adjustAnaglyphToggle();
 	}
 
 }); 
+
+function adjustAnaglyphToggle() {
+	if(window.innerWidth < 1024) {
+		$('.anaglyph_toggle').css('right', '60px');
+	} else {
+		$('.anaglyph_toggle').css('right', '0');
+	}
+}
 
 var scrollPos = 0;
 $.scrollTo(0, 0);
@@ -271,6 +282,8 @@ function onWindowResize() {
 	effect.setSize( window.innerWidth, window.innerHeight );
 
 	renderer.setSize( window.innerWidth, window.innerHeight );
+
+	adjustAnaglyphToggle();
 
 }
 

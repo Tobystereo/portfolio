@@ -35,7 +35,7 @@
 
 $media: screen;
 $feature: min-width;
-$tablet: 320px;
+$tablet: 600px;
 $desktop: 1024px;
 
  // Colors
@@ -201,8 +201,8 @@ body {
 }
 
 p {
-	width: 100%;
-	max-width: 960px;
+	width: 960px;
+	max-width: 90%;
 }
 
 .subheading{
@@ -226,7 +226,7 @@ blockquote {
 .jobposition {
 	float: left;
 	width: 400px;
-	// max-width: 100%;
+	max-width: 90%;
 	// display: block;
 	float: left;
 	// margin-right: 2em;
@@ -402,11 +402,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	top: 0;
 	right: 0;
 
-	// desktop
-	@media #{$media} and ($feature: $desktop) {
-		right: 60px;
-	}
-
 	& a {
 		display: block;
 		width: 60px;
@@ -504,13 +499,50 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	& p {
 		display: block;
 		margin-bottom: -20px;
-		margin-left: 40px;
+		margin-left: 5%;
+		width: 90%;
+
+		@media 
+		#{$media} and ($feature: $tablet),
+		only screen and (-webkit-min-device-pixel-ratio : 1.5),
+		only screen and (min-device-pixel-ratio : 1.5)
+		{
+			margin-left: 40px;
+		}
+	}
+
+	& blockquote {
+
+		margin-left: 5%;
+		width: 90%;
+
+		@media 
+		#{$media} and ($feature: $tablet),
+		only screen and (-webkit-min-device-pixel-ratio : 1.5),
+		only screen and (min-device-pixel-ratio : 1.5)
+		{
+			margin-left: 40px;
+		}
 	}
 }
 
 .resume, .footer, .skillset {
 	width: 960px;
 	max-width: 100%;
+
+	margin-top: -200px;
+	// add small screen responsive
+	// tablet
+	@media 
+	#{$media} and ($feature: $tablet)
+	{
+		margin-top: 0;
+	}
+
+	// desktop
+	@media #{$media} and ($feature: $desktop) {
+		margin-top: 0;
+	}
 }
 
 .code small {
