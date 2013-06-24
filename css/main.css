@@ -771,6 +771,12 @@ blockquote {
   -o-animation: nav_blink 5s 1;
   animation: nav_blink 5s 1;
 }
+@media screen and (min-width: 320px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 327, ../sass/main.scss */
+  .nav {
+    top: 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   /* line 327, ../sass/main.scss */
   .nav {
@@ -917,7 +923,7 @@ blockquote {
 @media screen and (min-width: 1024px) {
   /* line 398, ../sass/main.scss */
   .anaglyph_toggle {
-    right: 60;
+    right: 60px;
   }
 }
 /* line 410, ../sass/main.scss */
