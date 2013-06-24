@@ -4,6 +4,15 @@ $(document).ready(function() {
     autoHeight:false
   });
 
+	if(! Detector.webgl) {
+
+		$('.anaglyph_toggle').hide();
+		hasWebgl = false;
+
+	} else {
+		hasWebgl = true;
+	}
+
 }); 
 
 var scrollPos = 0;
@@ -26,7 +35,14 @@ function goto(location) {
 // THREE.JS
 ////////////////////////////////////////////////
 
-// if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+var hasWebgl = false;
+
+
+if ( ! Detector.webgl ) {
+	// Detector.addGetWebGLMessage();
+
+
+}
 
 var container;
 
@@ -421,11 +437,12 @@ function render() {
 				var colorValue = '0x' + colorValueHex + '' + colorValueHex + '' + colorValueHex;
 				console.log(colorValue);
 
-				wireframes[i].material = materialLineBlack;
-				// wireframes[i].material.emissive.setHex( 0xff0000 );
-				wireframes[i].material.emissive.setHex( colorValue);
-				scene.remove( wireframes[i] );
-
+				if(Detector.webgl) {
+					wireframes[i].material = materialLineBlack;
+					// wireframes[i].material.emissive.setHex( 0xff0000 );
+					wireframes[i].material.emissive.setHex( colorValue );
+					scene.remove( wireframes[i] );
+				}
 			}
 			
 		}
