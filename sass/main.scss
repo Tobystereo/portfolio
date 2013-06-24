@@ -1,0 +1,496 @@
+@import "compass/css3";
+@import "h5bp";
+@include h5bp-normalize;
+@include h5bp-base-styles;
+@include h5bp-chromeframe;
+@import "fonts";
+
+/* 
+ *	Mixins
+ */
+
+// keyframes mixin
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+ 
+
+
+/* 
+ *	Variables 
+ */
+
+ // Colors
+
+$col_bg: #999999;
+$col_1: #FB875B; 
+$col_2: #E06451; 
+$col_3: #f7666e; 
+$col_4: #E051A1; 
+$col_5: #F75BFB; 
+
+$col_linkedin: #9A4FFD;
+$col_behance: #573CE6;
+$col_twitter: #4357FE;
+
+$col_primary: $col_3;
+
+$col_ui_darkest: #000;
+$col_ui_darker: #1e1e1e; //#999999
+$col_ui_dark: #292929;
+$col_ui: #2e2e2e;
+$col_ui_light: #999;
+$col_ui_lighter: #ccc;
+$col_ui_lightest: #fff;
+
+.colors {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.color_swatch {
+	display: block; 
+	float: left;
+	width: 8.33333%; 
+	height: 5px; 
+	color: $col_1; 
+}
+
+a {
+	color: $col_ui_light;
+	text-decoration: none;
+	@include transition(all .8s ease-out);
+
+	&:hover {
+		color: $col_primary;
+	}
+}
+
+.col_ui_darkest { @extend .color_swatch;  background-color: $col_ui_darkest;  }
+.col_ui_darker { @extend .color_swatch;  background-color: $col_ui_darker;  }
+.col_ui_dark { @extend .color_swatch;  background-color: $col_ui_dark;  }
+.col_ui { @extend .color_swatch;  background-color: $col_ui;  }
+.col_ui_light { @extend .color_swatch;  background-color: $col_ui_light;  }
+.col_ui_lighter { @extend .color_swatch;  background-color: $col_ui_lighter;  }
+.col_ui_lightest { @extend .color_swatch;  background-color: $col_ui_lightest;  }
+.col_1 { @extend .color_swatch;  background-color: $col_1;  }
+.col_2 { @extend .color_swatch;  background-color: $col_2;  }
+.col_3 { @extend .color_swatch;  background-color: $col_3;  }
+.col_4 { @extend .color_swatch;  background-color: $col_4;  } 
+.col_5 { @extend .color_swatch;  background-color: $col_5;  }
+
+.liquid-slider-wrapper {
+	top: 1em;
+
+	& .liquid-nav-right-arrow {
+
+		position: absolute;
+		left: 44px;
+		top: 0;
+
+	  & a:after {
+	  content: "\25B6";
+	  }
+	}
+
+	& .liquid-nav-left-arrow {
+		position: absolute;
+		left: 0;
+		top: 0;
+
+	  & a:after {
+		content: "\25C0";
+	  }
+	}
+
+	& a:after {
+		display: block;
+		width: 44px;
+		height: 44px;
+		color: $col_ui_lighter;
+		background-color: $col_ui_dark;
+		text-align: center;
+		text-decoration: none !important;
+		font-size: 16px;
+		line-height: 44px;
+		// padding-top: 15px;
+		position:absolute;
+		overflow: hidden;
+	}
+
+	& a:hover:after {
+		color: $col_ui_lightest;
+		background-color: $col_ui;
+	}
+
+}
+
+.panel-wrapper {
+	margin-top: 40px;
+	height: auto;
+}
+
+// Responsive Breakpoints
+
+$media: screen;
+$feature: min-width;
+$tablet: 35em;
+$desktop: 70em;
+
+/* 
+ *	Global definitions 
+ */
+
+* {
+	@include box-sizing(border-box);
+}	
+
+body {
+	font-size: 16px;
+    font-size: 1em;
+    line-height: 1.4;
+    margin: 0;
+	color: $col_bg;
+	font-family: 'Signika', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	background-color: $col_ui_darker;
+	width: 100%; 
+	/*overflow: hidden;*/
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: mix($col_3, rgba(0,0,0,0));
+    text-shadow: none;
+}
+
+::selection {
+    background: mix($col_3, rgba(0,0,0,0));
+    text-shadow: none;
+}
+
+/* 
+ *	Typography
+ */
+
+ h1 {
+	font-size: 2em;
+	margin: 2em 0 0;
+}
+
+p {
+	width: 100%;
+	max-width: 960px;
+}
+
+.subheading{
+	font-family: 'Signika', Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 1.6em;
+	margin: 0;
+}
+
+blockquote {
+	font-family: 'Signika';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2em;
+	display: block;
+	max-width: 100%;
+	width: 400px;
+}
+
+.jobposition {
+	float: left;
+	width: 400px;
+	// max-width: 100%;
+	// display: block;
+	float: left;
+	// margin-right: 2em;
+
+	& h3 span {
+		font-weight: 200;
+		font-style: normal;
+	}
+}
+
+$col_quotevisual: mix($col_5, rgba(0,0,0,0));
+$col_quoteexperience: mix($col_3, rgba(0,0,0,0));
+$col_quotecode: mix($col_1, rgba(0,0,0,0));
+.quote_visual { background-color: transparentize($col_quotevisual, 0.25); }
+.quote_experience { background-color: transparentize($col_quoteexperience, 0.25); }
+.quote_code { background-color: transparentize($col_quotecode, 0.25); }
+
+
+
+.jobdescription {
+	width: 100%;
+	// max-width: 100%;
+	vertical-align: top !important;
+
+	
+	& p {
+		margin-top: 0;
+	}
+
+	// mobile (first)
+	@include column-count(1);
+
+	// // tablet
+	// @media #{$media} and ($feature: $tablet) {
+	// 	@include column-count(2);
+	// }
+
+	// // desktop
+	// @media #{$media} and ($feature: $desktop) {
+	// 	@include column-count(3);
+	// }
+}
+
+.portfolio_image {
+	display: block;
+	float: left;
+	width: 200px;
+	height: 150px;
+	// margin-right: 1em;
+	// margin-bottom: 1em;
+	
+	overflow: hidden;
+	& a {
+		@include opacity(0.6);
+		@include transition(all 1s ease-out);
+		&:hover {
+			@include opacity(1);
+		}
+	}
+
+	& img {
+		width: 100%;
+	}
+}
+
+/*
+ * Elements
+ */
+
+
+#container {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	& canvas {
+		background-color: $col_ui_darker;
+	}
+}
+
+.stats {
+	display: block; // block
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999 !important;
+	width: 100%;
+	height: 100px;
+}
+
+.nav {
+	position: fixed;
+	top: 48%;
+	right: 0;
+
+	& a {
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-decoration: none;
+		color: $col_ui_lighter;
+		background-color: $col_ui_dark;
+		text-align: center;
+		font-size: 24px;
+		padding-top: 12px;
+
+		@include transition(all 0.3s ease-out);
+
+		&:hover {
+			color: white;
+			background-color: $col_ui;
+		}
+	}
+
+	& .next {
+		// use of keyframes mixin
+		@include animation(nav_blink 5s 1);
+
+	}
+}
+
+@include keyframes(nav_blink) {
+  0% {
+    background-color: $col_ui_dark;
+  }
+  60% {
+    background-color: $col_ui_dark;
+  }
+  70% {
+    background-color: $col_ui_light;
+  }
+  80% {
+    background-color: $col_ui_dark;
+  }
+  90% {
+    background-color: $col_ui_light;
+  }
+  100% {
+    background-color: $col_ui_dark;
+  } 
+}
+
+.anaglyph_toggle {
+	font-family: 'tobystereo_icons';
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	& a {
+		display: block;
+		width: 60px;
+		height: 60px;
+		text-decoration: none;
+		color: #cccccc;
+		background-color: #292929;
+		text-align: center;
+		font-size: 24px;
+		padding-top: 15px;
+		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px; 
+
+		@include transition(all 0.3s ease-out);
+	}
+}
+
+
+
+.strikethrough {
+	padding-top: 15px;
+	text-shadow: rgba(255,7,0,1) 0px 0px 0px, rgba(0,255,230,1) 0px 0px 0px !important; 
+
+	& span {
+		position: absolute;
+	    width: 50px;
+	    border-top: 3px solid black;
+	    left: 5px;
+	    margin-top: 15px;
+	    zoom: 1;
+
+		&:first-of-type {
+			@include transform(rotate(45deg));
+	    }
+
+	    &:last-of-type {
+			@include transform(rotate(-45deg));
+		}
+	}
+}
+
+.anaglyph_toggle {
+
+	& a:hover {
+		color: white;
+		background-color: #4c4c4c;
+	}
+}
+
+.contentcontainer {
+	position: absolute;
+	z-index: 10;
+	overflow: visible;
+	width: 100%;
+	height: 100%;
+}
+
+.content {
+	width: 96%;
+	margin: 400px auto 0;
+	padding: 2%;
+}
+
+/* CONTENT ELEMENTS */
+
+.home, .intro, .experience, .design, .code, .footer, .resume, .skillset {
+	position: absolute;
+	width: 400px;
+	max-width: 100%;
+}
+
+.home 		{ top: 315px; }
+.intro 		{ top: 1000px; }
+.design 	{ top: 2000px; }
+.experience	{ top: 3000px; }
+.code 		{ top: 4000px; }
+.resume		{ top: 5000px; } 
+.skillset	{ top: 6000px; } 
+.footer		{ top: 10000px;}
+
+.home {
+	& a {
+		color: mix($col_ui, rgba(125,125,125,.75));
+	}
+
+	& .email:hover { color: $col_primary; }
+	& .linkedin:hover { color: $col_linkedin; }
+	& .behance:hover { color: $col_behance; }
+	& .twitter:hover { color: $col_twitter; }
+	& .dribbble:hover { color: $col_5; }
+}
+
+.intro {
+	color: $col_ui_darker;
+	text-align: left;
+	& p {
+		display: block;
+		margin-bottom: -20px;
+		margin-left: 40px;
+	}
+}
+
+.resume, .footer, .skillset {
+	width: 960px;
+	max-width: 100%;
+}
+
+.code small {
+	color: $col_ui;
+}
+
+.skill {
+	width: 300px;
+	max-width: 100%;
+	display: block;
+	float: left;
+}

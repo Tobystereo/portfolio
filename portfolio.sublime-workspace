@@ -1,0 +1,1296 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"selec",
+				"selectedIndex"
+			],
+			[
+				"random",
+				"randomSonnet"
+			],
+			[
+				"play",
+				"playlist2_value"
+			],
+			[
+				"rand",
+				"randomSonnet"
+			],
+			[
+				"playli",
+				"playlist_number"
+			],
+			[
+				"sonnet",
+				"sonnet_number"
+			],
+			[
+				"thebu",
+				"thebutton_label"
+			],
+			[
+				"create",
+				"createSet"
+			],
+			[
+				"the",
+				"thedjconsole"
+			],
+			[
+				"get",
+				"getElementById  (function)"
+			],
+			[
+				"number",
+				"numberOfSonnets"
+			],
+			[
+				"nu",
+				"numberOfSonnets"
+			],
+			[
+				"split",
+				"splitLines"
+			],
+			[
+				"line",
+				"lineContent"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"col_ui",
+				"col_ui_light"
+			],
+			[
+				"window",
+				"windowHalfX"
+			],
+			[
+				"inn",
+				"innerWidth  (variable)"
+			],
+			[
+				"backgron",
+				"background-color"
+			],
+			[
+				"col_ui_",
+				"col_ui_lighter"
+			],
+			[
+				"col_",
+				"col_primary"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"mater",
+				"materialLine"
+			],
+			[
+				"colorValu",
+				"colorValueR"
+			],
+			[
+				"pyrami",
+				"pyramidB"
+			],
+			[
+				"Me",
+				"MeshLambertMaterial"
+			],
+			[
+				"backr",
+				"background-color"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"He",
+				"Verdana, Geneva, Arial, Helvetica, sans-serif"
+			],
+			[
+				"material",
+				"materialRed  (variable)"
+			],
+			[
+				"materi",
+				"materialRed"
+			],
+			[
+				"mat",
+				"materialC"
+			],
+			[
+				"max",
+				"max-width	zen:css_properties"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"vec",
+				"vec_pyramidA_origin"
+			],
+			[
+				"ori",
+				"originalMax"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"vec_",
+				"vec_pyramidA_origin"
+			],
+			[
+				"vector",
+				"Vector3"
+			],
+			[
+				"vec_py",
+				"vec_pyramidA_origin"
+			],
+			[
+				"pyr",
+				"vec_pyramidA_origin"
+			],
+			[
+				"pyra",
+				"pyramids"
+			],
+			[
+				"pyramid",
+				"pyramidmaterial"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"social",
+				"socialbar"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"icon",
+				"icon-font-fallback"
+			],
+			[
+				"readingTime_summary_fast",
+				"readingTime_summary_fast_days"
+			],
+			[
+				"readingTime_time",
+				"readingTime_time_slow_days"
+			],
+			[
+				"readingTime_time_fast",
+				"readingTime_time_fast_minutes"
+			],
+			[
+				"readingTime",
+				"readingTime_time_slow_hours"
+			],
+			[
+				"readit",
+				"readingTime_time_fast_days"
+			],
+			[
+				"read",
+				"readingTime_time_fast_days"
+			],
+			[
+				"readin",
+				"readingTime_summary"
+			],
+			[
+				"reading",
+				"readingTime_element"
+			],
+			[
+				"article",
+				"articleElement"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"germaf",
+				"germafont_container"
+			],
+			[
+				"l",
+				"left:   (property)"
+			],
+			[
+				"img",
+				"img_w"
+			],
+			[
+				"de",
+				"dequeue"
+			],
+			[
+				"mouse",
+				"mouseover"
+			],
+			[
+				"no",
+				"no-repeat  (value)"
+			],
+			[
+				"timelineS",
+				"timelineStepForward"
+			],
+			[
+				"padd",
+				"padding-bottom	zen:css_properties"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"marg",
+				"margin-top:   (property)"
+			],
+			[
+				"fon-",
+				"font-size:   (property)"
+			],
+			[
+				"disspla",
+				"display	zen:css_properties"
+			],
+			[
+				"background-pos",
+				"-ms-background-position-x:   (property)"
+			],
+			[
+				"list-sty",
+				"list-style:   (property)"
+			],
+			[
+				"list-style",
+				"list-style-image:   (property)"
+			],
+			[
+				"bac",
+				"background-color	zen:css_properties"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"wp_t",
+				"wp_title  (function)"
+			],
+			[
+				"n",
+				"unicode-bidi:   (property)"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"box",
+				"box-shadow:   (property)"
+			],
+			[
+				"tect",
+				"text-align	zen:css_properties"
+			],
+			[
+				"pad",
+				"padding-bottom	zen:css_properties"
+			],
+			[
+				"light",
+				"light"
+			],
+			[
+				"inst",
+				"instagram_feed_module"
+			],
+			[
+				"mod",
+				"mod_dirs"
+			],
+			[
+				"num",
+				"num_photos"
+			],
+			[
+				"insta",
+				"instagram_num_photos"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"instagram",
+				"instagram_img"
+			],
+			[
+				"inta",
+				"instagram_img"
+			],
+			[
+				"tw",
+				"twitter_img"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"job",
+				"job_description"
+			],
+			[
+				"view",
+				"viewportHeight"
+			],
+			[
+				"foter",
+				"footerHeight"
+			],
+			[
+				"footerO",
+				"footerOffsetY"
+			],
+			[
+				"footer",
+				"footerOffset"
+			],
+			[
+				"foo",
+				"footerXOffset"
+			],
+			[
+				"a",
+				"andCulture"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"Times",
+				"\"Times New Roman\""
+			],
+			[
+				"contact",
+				"method_of_contact"
+			],
+			[
+				"tobias",
+				"tobiastreppmann"
+			],
+			[
+				"Co",
+				"Company"
+			],
+			[
+				"form",
+				"form_name"
+			],
+			[
+				"Method",
+				"method_of_contact"
+			],
+			[
+				"method",
+				"method_of_contact"
+			],
+			[
+				"ob_get",
+				"ob_get_contents"
+			],
+			[
+				"metho",
+				"method_of_contact"
+			],
+			[
+				"met",
+				"method_of_contact"
+			],
+			[
+				"email",
+				"emailaddress"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"blue",
+				"blue-lighter"
+			],
+			[
+				"nth",
+				"nth-of-type(  (pseudo-class)"
+			],
+			[
+				"b",
+				"blue-dark"
+			],
+			[
+				"first",
+				"first-of-type"
+			],
+			[
+				"s",
+				"visible  (value)"
+			],
+			[
+				"tabs",
+				"tabs_content_container"
+			],
+			[
+				"impot",
+				"important"
+			],
+			[
+				"end",
+				"endif"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"rea",
+				"no-repeat"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 19808,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 49.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rope",
+				"Snippet: New Property"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git ",
+				"Git: Pull"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"git : ",
+				"Git: Push Current Branch"
+			],
+			[
+				"comb",
+				"Sort via CSScomb"
+			],
+			[
+				"com",
+				"Sort via CSScomb"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"new f",
+				"File: New File Relative to Current View"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"delete",
+				"Delete Remote File"
+			],
+			[
+				"sass",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sft",
+				"SFTP: Upload File"
+			],
+			[
+				"place",
+				"Snippet: Image - Placeholder"
+			],
+			[
+				"prefix",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp up",
+				"SFTP: Upload File"
+			],
+			[
+				"ftp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"stack",
+				"Stackoverflow: Search Selection"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"Pacl",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 588.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/htdocs/PoetryMash/PoetryMash/data/shakespeare_sonnets_tab2.txt",
+		"/htdocs/PoetryMashup/Poetry Mashup/README.md",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/js/detector.js",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/sass/fonts.scss",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/css/liquid-slider.css",
+		"/Users/tobias/Dropbox/Poetry Shake/index.html",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/css/fonts.css",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/css/flexslider.css",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/js/jquery.easing.1.3.js",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/js/jquery.liquid-slider-custom.min.js",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/js/jquery.touchSwipe.min.js",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/config.rb",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/sass/flexslider.css",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/sass/flexslider.scss",
+		"/Users/tobias/Dropbox/tobiastreppmannresume/website/portfoliowebsite2/js/main.js",
+		"/Users/tobias/Downloads/sample 2/js/detector.js",
+		"/Users/tobias/Downloads/sample 2/js/stats.js",
+		"/Users/tobias/Downloads/sample 2/js/AnaglyphEffect.js",
+		"/htdocs/Ouya—Email-Template/ouya-email-template2.html",
+		"/htdocs/Ouya—Email Template/ouya-email-template.html",
+		"/Users/tobias/Desktop/graffitti markup language/canvasplayer/161.json",
+		"/Users/tobias/Google Drive/Giving Wall /Design/nav.html",
+		"/Users/tobias/Documents/Processing/Giving Wall/arduino_test.html",
+		"/Users/tobias/Documents/Processing/Giving Wall/sensor_monitor/web-export/index.html",
+		"/htdocs/processing/sensormonitor/sensor_monitor.pde",
+		"/Users/tobias/Desktop/icomoon44469/index.html",
+		"/Users/tobias/Documents/Processing/Giving Wall/Graph.pde",
+		"/Users/tobias/Documents/Processing/Giving Wall/processingjs-1.4.1.min.js",
+		"/Users/tobias/Downloads/ligature-test72005/index.html",
+		"/Users/tobias/Downloads/webfontkit-20130325-183049/specimen_files/specimen_stylesheet.css",
+		"/Users/tobias/Documents/Processing/The Nature Of Code/natureofcode_01_5/inde.html",
+		"/htdocs/webmag/mixture.json",
+		"/Users/tobias/Documents/Python/Hello World.py",
+		"/Users/tobias/Downloads/webfontkit-20130307-211250/mapgermany1945font-demo.html",
+		"/Users/tobias/Desktop/Bundeslandfont/germafont/license.txt",
+		"/Users/tobias/Desktop/Bundeslandfont/assets/css/styles.css",
+		"/Users/tobias/Desktop/Bundeslandfont/germafont/germafont.css",
+		"/Users/tobias/Downloads/webfontkit-20130307-211250/stylesheet.css",
+		"/Users/tobias/Desktop/Bundeslandfont/index.html",
+		"/Users/tobias/Desktop/Bundeslandfont/assets/css/germafont.css",
+		"/htdocs/Mount Nittany Foundation/Mount Nittany Foundation/sass/ie.scss",
+		"/htdocs/Mount Nittany Foundation/Mount Nittany Foundation/sass/grid.scss",
+		"/htdocs/Mount Nittany Foundation/Mount Nittany Foundation/config.rb",
+		"/htdocs/Mount Nittany Foundation/Mount Nittany Foundation/sass/screen.scss",
+		"/Users/tobias/Dropbox/tobystereo_logo/coming_soon/index.html",
+		"/Users/tobias/Documents/Xcode/baker/books/a-study-in-scarlet/book.json",
+		"/htdocs/Mount Nittany Foundation/: Compass Clearfix.scss",
+		"/Users/tobias/Dropbox/tobystereo_logo/coming_soon/assets/fonts/bariol_regular-demo.html",
+		"/Users/tobias/Dropbox/tobystereo_logo/coming_soon/assets/fonts/bariol_bold-demo.html",
+		"/Users/tobias/Dropbox/tobystereo/clients/MathUSee/Homeschool Styles/development/interactive/index.html",
+		"/Users/tobias/Dropbox/tobystereo/clients/MathUSee/Materials/interactive/materials_interactive_blue.html",
+		"/Users/tobias/Dropbox/tobystereo/clients/MathUSee/four step module/4step_final/foursteps_interactive_blue.html",
+		"/Users/tobias/Dropbox/tobystereo/clients/MathUSee/timeline/timeline_final/timeline_interactive.html",
+		"/Users/tobias/Dropbox/tobystereo/clients/MathUSee/Materials/interactive/materials_interactive.html",
+		"/Users/tobias/Dropbox/tobystereo/clients/MathUSee/4settings/development/interactive/index.html",
+		"/Volumes/resources/Mount Nittany/Foundation Redesign/Development/interactive_presentation/option_b2.html",
+		"/Users/tobias/Dropbox/tobystereo/clients/MathUSee/timeline/development/interactive/timeline_interactive.html",
+		"/Volumes/resources/Mount Nittany/Foundation Redesign/Development/interactive_presentation/index.html",
+		"/Users/tobias/Desktop/stepthrough.html",
+		"/htdocs/aopc/assets/sass/screen.scss",
+		"/htdocs/aopc/assets/js/main.js",
+		"/htdocs/aopc/index.html",
+		"/htdocs/aopc/assets/sass/grid.scss",
+		"/htdocs/aopc/.gitignore",
+		"/htdocs/aopc/assets/sass/fluid.scss",
+		"/htdocs/aopc/assets/css/screen.css",
+		"/htdocs/aopc/assets/css/grid.css",
+		"/htdocs/aopc/config.rb",
+		"/htdocs/h5bp/h5bp/css/style.css",
+		"/htdocs/h5bp/h5bp/sass/style.scss",
+		"/Users/tobias/Downloads/initializr 2/css/main.css",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/cb_custom_modules/box/box.php",
+		"/Users/tobias/Downloads/initializr 2/index.html",
+		"/htdocs/h5bp/h5bp/config.rb",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/cb_custom_modules/box/view.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/js/main.js",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/template-about.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/scss/forms.scss",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/scss/ie7.scss",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/scss/ie.scss",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/header.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/scss/styles.scss",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/functions.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/footer.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/footer-blog.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/template-test.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/template-bashrotator.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/cb_custom_modules/banner/view.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/template-bash.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/styles/styles.css",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/styles/1140.css",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/js/script.js",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/assets/js/json2.js",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata/template-partners.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata_bash/footer.php",
+		"/htdocs/gd/wordpress/wp-content/themes/gooddata_bash/header.php",
+		"/htdocs/gd/wordpress/wp-content/gooddatatheme.sublime-project",
+		"/Users/tobias/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/htdocs/GoodData/GoodData.sublime-project",
+		"/htdocs/GoodData/GoodData/stylesheets/1140.css",
+		"/Applications/MAMP/htdocs/GoodData/css/typography.css",
+		"/Users/tobias/Desktop/GoodData/index.html",
+		"/Users/tobias/Library/Caches/Cleanup At Startup/Transmit/60E0767D-A44F-44C2-8A48-52A6C9CADFAB/style.css",
+		"/Applications/MAMP/htdocs/iAWriterCSS/iA Writer.css",
+		"/Users/tobias/Dropbox/leapforward/assets/css/stereo.css",
+		"/Users/tobias/Desktop/mtnittany/extracted-css.css",
+		"/Users/tobias/Library/Application Support/Marked/Custom CSS/Custom Example.css",
+		"/Applications/MAMP/htdocs/carrington/wp-content/themes/eddiemachado-bones-8440c49/cb_custom_modules/instagram_feed/view.php",
+		"/Applications/MAMP/htdocs/twitter/instagram.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/index.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/cb_rows/masthead-3col/masthead-3col.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/functions.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/page.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/single.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/404.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/contact_form.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/css/style.scss",
+		"/Applications/MAMP/htdocs/memSQL2/email-template/developer_email.html",
+		"/Applications/MAMP/htdocs/memSQL2/email-template/trial_email.html",
+		"/Applications/MAMP/htdocs/memSQL2/email-template/MemSQL_email_template.html",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/css/ie.scss",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/css/style.css",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/css/form.scss",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/footer.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/header.php",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/cb_custom_modules/picture/picture.php",
+		"/Users/tobias/Desktop/radiotest.html",
+		"/Applications/MAMP/htdocs/memSQL2/wp-content/themes/memSQL/script.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"",
+			"techlander.html",
+			"",
+			"selection",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"a {",
+			"a",
+			"footer",
+			"portfolio",
+			"anagly",
+			"camera.position.y",
+			"ionE",
+			"ionD",
+			"skillset",
+			"ionB",
+			"<li>",
+			"transitionB",
+			"a href",
+			"400px",
+			"Lancaster\">",
+			"<img",
+			"overflow",
+			"960",
+			"height",
+			"overflow",
+			"960px",
+			"#",
+			":",
+			"$",
+			"<br/>",
+			"atch",
+			"display: block; float: left; width: 60px; height: 60px; color: $col_1;",
+			"</div>",
+			"height: 60px; ba",
+			"60px; ",
+			"background-col",
+			"color",
+			"$col_primary",
+			"{  }",
+			"\"></div>",
+			"<div class=\"",
+			"currenthex",
+			"wireframes",
+			"wireframes[i]",
+			"mesh",
+			"pyramidA",
+			"materialYellow",
+			"materialOrange",
+			"materialRed",
+			"materialC",
+			"materialB",
+			"materialA",
+			"light",
+			"scrollPos",
+			"design",
+			"experience",
+			"1000",
+			"600",
+			"scale",
+			"setSize",
+			"url('",
+			"normalize",
+			"stats",
+			"fps",
+			"stats",
+			"pyramidA",
+			"Futura, ",
+			"‘Century Gothic’, AppleGothic, sans-serif",
+			".templatef",
+			"cellpadding=\"10\"",
+			"cellspacing=\"10\"",
+			"social",
+			".std_social",
+			"border-top",
+			" width=\"16\" height=\"16\"",
+			"oddrow",
+			"valign",
+			"Arial",
+			"run()",
+			"slow",
+			"hour",
+			"days",
+			"http://www.gutenberg.org/files/98/98-h/98-h.htm",
+			"24",
+			"url('",
+			"local",
+			"online",
+			"tutoring",
+			"foursettings",
+			"home",
+			"dem",
+			"/materials_interaction/materials_interaction/",
+			"img/",
+			"fourStep",
+			"fourStepmaterials",
+			"content",
+			"green",
+			"fourStep",
+			"console.l",
+			"timeline_autoplay",
+			"65px",
+			"50px",
+			"-48px",
+			".nav a:hover",
+			".png'",
+			"a ",
+			".timeline_content_10 .timeline_person",
+			"timelineTarget",
+			"timelineNext",
+			"timelineTarget",
+			"timelineModule",
+			"42",
+			"45",
+			"<span>",
+			"fourStep",
+			"$plus",
+			"grid-gutter-width",
+			"clearfix",
+			"sidebar",
+			"small",
+			" small",
+			"small",
+			" small",
+			".callout",
+			"em {",
+			".line2",
+			".link",
+			"menu-item a:after",
+			".cta-secondary",
+			"console.",
+			"progressbar",
+			".progressbar",
+			":after"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"ionF",
+			"ionE",
+			"transitionD",
+			"ionC",
+			"<li class=\"tools\">",
+			"skillset",
+			"a target=\"_new\" href",
+			"Lancaster\"></a></div>",
+			"<div class=\"portfolio_image\"><a href=\"\"><img",
+			"100%",
+			"0x",
+			" =",
+			"var ",
+			"",
+			"atch;",
+			"@extend .color_swatch ",
+			"<br/><small></small></div>",
+			"height: 60px; color: $col_1; ba",
+			"60px; color: yellow; ",
+			"background-color",
+			"col",
+			"$col_1",
+			"{ display: block; float: left; width: 60px; height: 60px; background-color: ;  }",
+			" {  }",
+			".",
+			"wireframes[i]",
+			"wireframes",
+			"pyramid",
+			"materialC",
+			"materialB",
+			"materialA",
+			"materialGray",
+			"lightB",
+			"experience",
+			"design",
+			"transitionB",
+			"transitionA",
+			"code",
+			"design",
+			"experienceMax",
+			"experienceMin",
+			"url('../fonts/",
+			"ms",
+			"pyramidC",
+			"pyramidB",
+			"",
+			"Arial, Helvetica, sans-serif",
+			"cellpadding=\"0\"",
+			"cellspacing=\"0\"",
+			"",
+			"evenrow",
+			"Futura, ‘Century Gothic’, AppleGothic, sans-serif",
+			"fast",
+			"minute",
+			"hours",
+			"",
+			"url('assets/fonts/",
+			"relaxed",
+			"classical",
+			"traditional",
+			"hsstyles",
+			"cmason",
+			"/materials_interaction/",
+			"img/materials_interaction/",
+			"materials",
+			"fourStepMaterials",
+			"materials",
+			"materials_interaction",
+			"fourSettings",
+			"70px",
+			"65px",
+			"0",
+			".active a",
+			"_green.png'",
+			"a:hover ",
+			".timeline_content_9 .timeline_person",
+			"timelineTarget",
+			"timelineNext",
+			"timeline",
+			"48",
+			"42",
+			"<span class=\"label1\">",
+			"timeline",
+			".bash-icon-goodsubscription",
+			".bash-icon-goodmarketing",
+			".bash-icon-goodsales",
+			"$light-hover",
+			"blue-lighter",
+			"'template_url'",
+			"href=\"<?php bloginfo( $template_url ); ?>/ass",
+			"-",
+			"href=\"stylesheets",
+			"(90deg , rgb(250,205,35) 0%, rgb(175,144,23) 100%);",
+			"$text-darker",
+			"blue-darkest",
+			"number_of_images_to_display",
+			"imgsize",
+			"username",
+			"http://www.memsql.com/wp-content/uploads/2012/06/",
+			"000000",
+			"8b8b8b",
+			"headline_jobs",
+			"$headline_jobs",
+			"$new",
+			"cb_news",
+			"$jobs",
+			"cb_job_posts",
+			"cfct-module-picture",
+			"cfct_module_picture",
+			";",
+			"$body += ",
+			"echo('<br/> session started <br/><strong>Form name:</strong> ');\n    	echo($_POST['form-name']);\n    	echo('<br/><strong>Edition:</strong> ');\n    	echo($_POST['edition']);\n		echo('<br/>');\n		echo \"<strong>Name: </strong>\";\n		echo($name);\n		echo \"<br/><strong>Email: </strong>\";\n		echo($email);\n		echo \"<br/><strong>Phone: </strong>\";\n		echo($phone);\n		echo \"<br/><strong>method_of_contact: </strong>\";\n		$method_of_contact = stripslashes((strip_tags($_POST['method_of_contact'])));\n		echo($method_of_contact);",
+			".",
+			"href=\"nowhitepapers.html\"",
+			"",
+			"color: ",
+			"",
+			" =",
+			"var blue_darkest: '#000000'; //#041729;\n	var blue_darker: '#123150';\n	var blue_dark: '#255c8e';\n	var blue: '#4a99fb';\n	var blue_light: '#90befc';\n	var blue_lighter: '#bdd8fd';\n	var blue_lightest: '#d4d9de';\n\n	var dark: 'black';\n	var light: 'white';\n\n	var accent_color: '#fff848'; //yellow\n	var accent_color_light: '#FFFCB3';",
+			"now",
+			"<div class=\"icon\"></div>",
+			"$b",
+			"0"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 19808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 196.0
+	},
+	"output.git":
+	{
+		"height": 114.0
+	},
+	"output.sftp":
+	{
+		"height": 175.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/tobias/Desktop/memSQL/Buildout/memSQL.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 221.0,
+	"status_bar_visible": true
+}
