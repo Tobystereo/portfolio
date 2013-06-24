@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 portfolio
 =========
 
@@ -16,6 +17,8 @@ The online portfolio of Tobias Treppmann
 >>>>>>> Initial commit
 =======
 >>>>>>> Initial Commit
+=======
+>>>>>>> Initial commit
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,
@@ -89,6 +92,8 @@ of developers have helped make the HTML5 Boilerplate what it is today.
 =======
 =======
 >>>>>>> Initial Commit
+=======
+>>>>>>> Initial commit
 portfolio
 =========
 
@@ -105,6 +110,8 @@ The online portfolio of Tobias Treppmann
 =======
 =======
 =======
+=======
+>>>>>>> Initial commit
 # [HTML5 Boilerplate](http://html5boilerplate.com)
 
 HTML5 Boilerplate is a professional front-end template for building fast,
@@ -168,6 +175,21 @@ you want to write about your project.
 Anyone and everyone is welcome to
 [contribute](/h5bp/html5-boilerplate/blob/master/CONTRIBUTING.md). Hundreds
 of developers have helped make the HTML5 Boilerplate what it is today.
+<<<<<<< HEAD
 >>>>>>> Initial Commit
+<<<<<<< HEAD
 >>>>>>> Initial Commit
+<<<<<<< HEAD
 >>>>>>> Initial Commit
+=======
+=======
+=======
+=======
+portfolio
+=========
+
+The online portfolio of Tobias Treppmann
+>>>>>>> Initial commit
+>>>>>>> Initial commit
+>>>>>>> Initial commit
+>>>>>>> Initial commit
