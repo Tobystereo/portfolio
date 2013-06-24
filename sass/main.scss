@@ -31,6 +31,13 @@
  *	Variables 
  */
 
+ // Responsive Breakpoints
+
+$media: screen;
+$feature: min-width;
+$tablet: 35em;
+$desktop: 70em;
+
  // Colors
 
 $col_bg: #999999;
@@ -144,12 +151,7 @@ a {
 	height: auto;
 }
 
-// Responsive Breakpoints
 
-$media: screen;
-$feature: min-width;
-$tablet: 35em;
-$desktop: 70em;
 
 /* 
  *	Global definitions 
@@ -354,7 +356,11 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 	// add small screen responsive
 	// tablet
-	@media #{$media} and ($feature: $tablet) {
+	@media 
+	#{$media} and ($feature: $tablet),
+	#{$media} and (-webkit-min-device-pixel-ratio: 2), 
+	#{$media} and (min-resolution: 192dpi)
+	{
 		top: 48%;
 	}
 
@@ -362,6 +368,9 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	@media #{$media} and ($feature: $desktop) {
 		top: 48%;
 	}
+
+	
+
 
 }
 
