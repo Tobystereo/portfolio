@@ -324,7 +324,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 .nav {
 	position: fixed;
-	top: 48%;
+	top: 0;
 	right: 0;
 
 	& a {
@@ -351,6 +351,18 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		@include animation(nav_blink 5s 1);
 
 	}
+
+	// add small screen responsive
+	// tablet
+	@media #{$media} and ($feature: $tablet) {
+		top: 48%;
+	}
+
+	// desktop
+	@media #{$media} and ($feature: $desktop) {
+		top: 48%;
+	}
+
 }
 
 @include keyframes(nav_blink) {
