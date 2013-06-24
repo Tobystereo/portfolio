@@ -900,15 +900,21 @@ blockquote {
   }
 }
 
-/* line 377, ../sass/main.scss */
+/* line 378, ../sass/main.scss */
 .anaglyph_toggle {
+  display: none;
+}
+
+/* line 383, ../sass/main.scss */
+.webgl .anaglyph_toggle {
+  display: block;
   font-family: 'tobystereo_icons';
   position: fixed;
   top: 0;
   right: 0;
 }
-/* line 383, ../sass/main.scss */
-.anaglyph_toggle a {
+/* line 390, ../sass/main.scss */
+.webgl .anaglyph_toggle a {
   display: block;
   width: 60px;
   height: 60px;
@@ -924,14 +930,18 @@ blockquote {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
-/* line 401, ../sass/main.scss */
-.strikethrough {
+/* line 404, ../sass/main.scss */
+.webgl .anaglyph_toggle a:hover {
+  color: white;
+  background-color: #4c4c4c;
+}
+/* line 413, ../sass/main.scss */
+.webgl .strikethrough {
   padding-top: 15px;
   text-shadow: #ff0700 0px 0px 0px, #00ffe6 0px 0px 0px !important;
 }
-/* line 405, ../sass/main.scss */
-.strikethrough span {
+/* line 417, ../sass/main.scss */
+.webgl .strikethrough span {
   position: absolute;
   width: 50px;
   border-top: 3px solid black;
@@ -939,16 +949,16 @@ blockquote {
   margin-top: 15px;
   zoom: 1;
 }
-/* line 413, ../sass/main.scss */
-.strikethrough span:first-of-type {
+/* line 425, ../sass/main.scss */
+.webgl .strikethrough span:first-of-type {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 417, ../sass/main.scss */
-.strikethrough span:last-of-type {
+/* line 429, ../sass/main.scss */
+.webgl .strikethrough span:last-of-type {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -956,13 +966,7 @@ blockquote {
   transform: rotate(-45deg);
 }
 
-/* line 425, ../sass/main.scss */
-.anaglyph_toggle a:hover {
-  color: white;
-  background-color: #4c4c4c;
-}
-
-/* line 431, ../sass/main.scss */
+/* line 439, ../sass/main.scss */
 .contentcontainer {
   position: absolute;
   z-index: 10;
@@ -971,7 +975,7 @@ blockquote {
   height: 100%;
 }
 
-/* line 439, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 .content {
   width: 96%;
   margin: 400px auto 0;
@@ -979,102 +983,102 @@ blockquote {
 }
 
 /* CONTENT ELEMENTS */
-/* line 447, ../sass/main.scss */
+/* line 455, ../sass/main.scss */
 .home, .intro, .experience, .design, .code, .footer, .resume, .skillset {
   position: absolute;
   width: 400px;
   max-width: 100%;
 }
 
-/* line 453, ../sass/main.scss */
+/* line 461, ../sass/main.scss */
 .home {
   top: 315px;
 }
 
-/* line 454, ../sass/main.scss */
+/* line 462, ../sass/main.scss */
 .intro {
   top: 1000px;
 }
 
-/* line 455, ../sass/main.scss */
+/* line 463, ../sass/main.scss */
 .design {
   top: 2000px;
 }
 
-/* line 456, ../sass/main.scss */
+/* line 464, ../sass/main.scss */
 .experience {
   top: 3000px;
 }
 
-/* line 457, ../sass/main.scss */
+/* line 465, ../sass/main.scss */
 .code {
   top: 4000px;
 }
 
-/* line 458, ../sass/main.scss */
+/* line 466, ../sass/main.scss */
 .resume {
   top: 5000px;
 }
 
-/* line 459, ../sass/main.scss */
+/* line 467, ../sass/main.scss */
 .skillset {
   top: 6000px;
 }
 
-/* line 460, ../sass/main.scss */
+/* line 468, ../sass/main.scss */
 .footer {
   top: 10000px;
 }
 
-/* line 463, ../sass/main.scss */
+/* line 471, ../sass/main.scss */
 .home a {
   color: rgba(75, 75, 75, 0.875);
 }
-/* line 467, ../sass/main.scss */
+/* line 475, ../sass/main.scss */
 .home .email:hover {
   color: #f7666e;
 }
-/* line 468, ../sass/main.scss */
+/* line 476, ../sass/main.scss */
 .home .linkedin:hover {
   color: #9a4ffd;
 }
-/* line 469, ../sass/main.scss */
+/* line 477, ../sass/main.scss */
 .home .behance:hover {
   color: #573ce6;
 }
-/* line 470, ../sass/main.scss */
+/* line 478, ../sass/main.scss */
 .home .twitter:hover {
   color: #4357fe;
 }
-/* line 471, ../sass/main.scss */
+/* line 479, ../sass/main.scss */
 .home .dribbble:hover {
   color: #f75bfb;
 }
 
-/* line 474, ../sass/main.scss */
+/* line 482, ../sass/main.scss */
 .intro {
   color: #1e1e1e;
   text-align: left;
 }
-/* line 477, ../sass/main.scss */
+/* line 485, ../sass/main.scss */
 .intro p {
   display: block;
   margin-bottom: -20px;
   margin-left: 40px;
 }
 
-/* line 484, ../sass/main.scss */
+/* line 492, ../sass/main.scss */
 .resume, .footer, .skillset {
   width: 960px;
   max-width: 100%;
 }
 
-/* line 489, ../sass/main.scss */
+/* line 497, ../sass/main.scss */
 .code small {
   color: #2e2e2e;
 }
 
-/* line 493, ../sass/main.scss */
+/* line 501, ../sass/main.scss */
 .skill {
   width: 300px;
   max-width: 100%;
