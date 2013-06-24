@@ -523,7 +523,11 @@
 			"file": "index.html",
 			"settings":
 			{
+<<<<<<< HEAD
+				"buffer_size": 19829,
+=======
 				"buffer_size": 19808,
+>>>>>>> Initial Commit
 				"line_ending": "Unix"
 			}
 		}
@@ -1102,7 +1106,11 @@
 					"file": "index.html",
 					"settings":
 					{
+<<<<<<< HEAD
+						"buffer_size": 19829,
+=======
 						"buffer_size": 19808,
+>>>>>>> Initial Commit
 						"regions":
 						{
 						},

@@ -1,4 +1,37 @@
 $(document).ready(function() {
+<<<<<<< HEAD
+
+
+	if(window.innerWidth > 786) {
+		$('#slider-id').liquidSlider({
+			autoSlide:false,
+			autoHeight:false
+		});
+	}
+
+	if(! Detector.webgl) {
+
+		$('.anaglyph_toggle').hide();
+		hasWebgl = false;
+
+	} else {
+		hasWebgl = true;
+		// adjustAnaglyphToggle();
+	}
+
+}); 
+
+// function adjustAnaglyphToggle() {
+// 	if(window.innerWidth < 1024) {
+// 		$('.anaglyph_toggle').css('right', '60px');
+// 	} else {
+// 		$('.anaglyph_toggle').css('right', '0');
+// 	}
+// }
+
+var scrollPos = 0;
+// $.scrollTo(0, 0);
+=======
    $('#slider-id').liquidSlider({
     autoSlide:false,
     autoHeight:false
@@ -8,12 +41,21 @@ $(document).ready(function() {
 
 var scrollPos = 0;
 $.scrollTo(0, 0);
+>>>>>>> Initial Commit
 
 
 window.onscroll = function (oEvent) {
   // called when the window is scrolled.
   scrollPos = $(document).scrollTop();
   $('.scrollPos').text(scrollPos);
+<<<<<<< HEAD
+  if(scrollPos > 800) { 
+  	$('.home').hide(); 
+  } else {
+  	$('.home').show(); 
+  }
+=======
+>>>>>>> Initial Commit
 }
 
 function goto(location) {
@@ -26,7 +68,16 @@ function goto(location) {
 // THREE.JS
 ////////////////////////////////////////////////
 
+<<<<<<< HEAD
+var hasWebgl = false;
+
+
+if ( ! Detector.webgl ) {
+	// Detector.addGetWebGLMessage();
+}
+=======
 if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+>>>>>>> Initial Commit
 
 var container;
 
@@ -49,7 +100,11 @@ var locationA, locationB, locationC, dir, acceleration, velocity, targetA, targe
 var topspeed = 10.0;
 var wireframes = new Array();
 
+<<<<<<< HEAD
+var anaglyph = false;
+=======
 var anaglyph = true;
+>>>>>>> Initial Commit
 
 /* 
  * Colors 
@@ -85,6 +140,101 @@ function init() {
 	scene = new THREE.Scene();
 	scene.fog = new THREE.FogExp2( col_ui_lighter, 0.0002 );
 
+<<<<<<< HEAD
+
+	if(Detector.webgl){
+		// create pyramid material  MeshLambertMaterial for WebGL, MeshBasicMaterial for CanvasRenderer
+		materialGray =  new THREE.MeshLambertMaterial( { 
+			color: col_ui_lightest,	
+			transparent: true, 
+			opacity: 0.25 
+		} );
+
+		materialA = new THREE.MeshLambertMaterial( { 
+			color: col_1, 
+			combine: THREE.MixOperation, 
+			reflectivity: 1.25,
+			transparent: true, 
+			opacity: 0.75
+		} );
+
+		materialB = new THREE.MeshLambertMaterial( { 
+			color: col_3, 
+			combine: THREE.MixOperation, 
+			reflectivity: 1.25,
+			transparent: true, 
+			opacity: 0.50 
+		} );
+
+		materialC = new THREE.MeshLambertMaterial( { 
+			color: col_5, 
+			combine: THREE.MixOperation, 
+			reflectivity: 1.25,
+			transparent: true, 
+			opacity: 0.25 
+		} );
+
+		materialLine = new THREE.MeshLambertMaterial({
+			wireframe: true,
+	        color: col_ui_lighter
+	    });
+
+	    materialLineBlack = new THREE.MeshLambertMaterial({
+			wireframe: true,
+	        color: col_ui_darkest
+	    });
+
+		renderer = new THREE.WebGLRenderer( { antialias: true } );
+		// effect = new THREE.AnaglyphEffect( renderer );
+		// effect.setSize( width, height );
+
+	} else {
+		// create pyramid material  MeshLambertMaterial for WebGL, MeshBasicMaterial for CanvasRenderer
+		materialGray =  new THREE.MeshBasicMaterial( { 
+			color: col_ui_lightest,	
+			transparent: true, 
+			opacity: 0.25 
+		} );
+
+		materialA = new THREE.MeshBasicMaterial( { 
+			color: col_1, 
+			combine: THREE.MixOperation, 
+			reflectivity: 1.25,
+			transparent: true, 
+			opacity: 0.75
+		} );
+
+		materialB = new THREE.MeshBasicMaterial( { 
+			color: col_3, 
+			combine: THREE.MixOperation, 
+			reflectivity: 1.25,
+			transparent: true, 
+			opacity: 0.50 
+		} );
+
+		materialC = new THREE.MeshBasicMaterial( { 
+			color: col_5, 
+			combine: THREE.MixOperation, 
+			reflectivity: 1.25,
+			transparent: true, 
+			opacity: 0.25 
+		} );
+
+		materialLine = new THREE.MeshBasicMaterial({
+			wireframe: true,
+	        color: col_ui_lighter
+	    });
+
+	    materialLineBlack = new THREE.MeshBasicMaterial({
+			wireframe: true,
+	        color: col_ui_darkest
+	    });
+
+		renderer = new THREE.CanvasRenderer( { antialias: true } );
+	}
+
+=======
+>>>>>>> Initial Commit
 	light = new THREE.DirectionalLight( col_ui_lightest );
 	light.position.set( 0, -1.2, 1 ).normalize();
 	scene.add( light );
@@ -99,6 +249,8 @@ function init() {
 
 	var ambient = new THREE.AmbientLight( col_ui_dark );
 	scene.add( ambient );
+<<<<<<< HEAD
+=======
 
 	// create pyramid material
 	materialGray =  new THREE.MeshLambertMaterial( { 
@@ -140,6 +292,7 @@ function init() {
 		wireframe: true,
         color: col_ui_darkest
     });
+>>>>>>> Initial Commit
 	
 	vec_pyramidA_origin = new THREE.Vector3(0, 35, 0);
 	vec_pyramidB_origin = new THREE.Vector3(0, 45, 0);
@@ -178,6 +331,15 @@ function init() {
 	}
 
 	// setup the renderer
+<<<<<<< HEAD
+	projector = new THREE.Projector();
+	raycaster = new THREE.Raycaster();
+	
+	renderer.setFaceCulling( THREE.CullFaceNone );
+
+	var width = window.innerWidth || 2;
+	var height = window.innerHeight || 2;	
+=======
 	// renderer = new THREE.WebGLRenderer( { antialias: true } );
 	// renderer = new THREE.AnaglyphWebGLRenderer();
 	// renderer.setFaceCulling( 0 );
@@ -192,6 +354,7 @@ function init() {
 
 	effect = new THREE.AnaglyphEffect( renderer );
 	effect.setSize( width, height );
+>>>>>>> Initial Commit
 
 	container.appendChild( renderer.domElement );
 
@@ -212,6 +375,12 @@ function onWindowResize() {
 
 	renderer.setSize( window.innerWidth, window.innerHeight );
 
+<<<<<<< HEAD
+	adjustAnaglyphToggle();
+
+}
+
+=======
 }
 
 function onDocumentMouseMove( event ) {
@@ -223,6 +392,7 @@ function onDocumentMouseMove( event ) {
 
 //
 
+>>>>>>> Initial Commit
 function animate() {
 
 	requestAnimationFrame( animate );
@@ -238,14 +408,19 @@ function onDocumentMouseMove(event) {
 	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
 	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 
+<<<<<<< HEAD
+=======
 	
 
 	// pyramidA.
 
+>>>>>>> Initial Commit
 }
 
 
 function render() {
+<<<<<<< HEAD
+=======
 	// camera.position.x += ( mouseX - camera.position.x ) * 0.05;
 	// camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
 
@@ -276,6 +451,7 @@ function render() {
 	// 	INTERSECTED = null;
 
 	// }
+>>>>>>> Initial Commit
 
 	if ( pyramidA && pyramidB && pyramidC) {
 		
@@ -344,6 +520,8 @@ function render() {
 			pyramidC.material = materialGray; // materialLine;
 
 			var wireframesDistribution = map(scrollPos, experienceMin, experienceMax, 0, 150);
+<<<<<<< HEAD
+=======
 
 			// for ( var i = 0; i < wireframes.length; i ++ ) {
 
@@ -353,6 +531,7 @@ function render() {
 			// 	scene.add( wireframes[i] );
 
 			// }
+>>>>>>> Initial Commit
 			
 		}
 
@@ -366,6 +545,8 @@ function render() {
 			pyramidA.material = materialA;	
 			pyramidB.material = materialGray;
 			pyramidC.material = materialGray;
+<<<<<<< HEAD
+=======
 
 			// meshes[ i ].geometry.faces[ 0 ].materials[ 0 ].color.setHex( 0x0000bb );
 
@@ -383,6 +564,7 @@ function render() {
 				scene.remove( wireframes[i] );
 
 			}
+>>>>>>> Initial Commit
 			
 		}
 
@@ -393,12 +575,15 @@ function render() {
 			pyramidB.position.y = map(scrollPos, transitionCMin, transitionCMax, 225, 45);
 			pyramidC.position.y = map(scrollPos, transitionCMin, transitionCMax, 375, 55);	
 
+<<<<<<< HEAD
+=======
 			// pyramidA.rotation.x = map(scrollPos, transitionCMin, transitionCMax, 45, 90);
 			// pyramidB.rotation.x = map(scrollPos, transitionCMin, transitionCMax, 45, 90);
 			// pyramidC.rotation.x = map(scrollPos, transitionCMin, transitionCMax, 45, 90);	
 
 			// camera.position.z = map(scrollPos, transitionCMin, transitionCMax, -600, 600);	
 
+>>>>>>> Initial Commit
 			pyramidA.material = materialA;
 			pyramidB.material = materialB;
 			pyramidC.material = materialC;
@@ -437,17 +622,26 @@ function render() {
 				pyramidA.position.x = map(scrollPos, transitionDMin, transitionDMax, -0, 0);
 				pyramidB.position.x = map(scrollPos, transitionDMin, transitionDMax, -150, 0);
 				pyramidC.position.x = map(scrollPos, transitionDMin, transitionDMax, -300, 0);
+<<<<<<< HEAD
+			}	
+=======
 			}
 
 			// camera.position.z = map(scrollPos, transitionDMin, transitionDMax, -600, 600);	
+>>>>>>> Initial Commit
 
 			pyramidA.material = materialA;
 			pyramidB.material = materialB;
 			pyramidC.material = materialC;
 		}
 
+<<<<<<< HEAD
+		var transitionEMin = 6400;
+		var transitionEMax = 6800;
+=======
 		var transitionEMin = 6800;
 		var transitionEMax = 7200;
+>>>>>>> Initial Commit
 		if(scrollPos > transitionEMin && scrollPos <= transitionEMax) {
 
 			camera.position.z = map(scrollPos, transitionEMin, transitionEMax, 600, 60);	
@@ -458,6 +652,19 @@ function render() {
 		}
 
 
+<<<<<<< HEAD
+		// var transitionFMin = 7800;
+		// var transitionFMax = 8200;
+		// if(scrollPos > transitionFMin && scrollPos <= transitionFMax) {
+
+		// 	camera.position.z = map(scrollPos, transitionFMin, transitionFMax, 60, 10);	
+		// 	camera.position.y = map(scrollPos, transitionFMin, transitionFMax, 0, 45);	
+
+		// 	pyramidA.material = materialA;
+		// 	pyramidB.material = materialB;
+		// 	pyramidC.material = materialC;
+		// }
+=======
 		var transitionFMin = 7800;
 		var transitionFMax = 8200;
 		if(scrollPos > transitionFMin && scrollPos <= transitionFMax) {
@@ -469,6 +676,7 @@ function render() {
 			pyramidB.material = materialB;
 			pyramidC.material = materialC;
 		}
+>>>>>>> Initial Commit
 
 
 		$('.cameraz').text(camera.position.z);
@@ -478,6 +686,15 @@ function render() {
 
 	if ( light ) {
 		light.position.x = 2000 * Math.cos( counter );
+<<<<<<< HEAD
+		light.position.z = 2000 * Math.sin( counter );	
+		counter += 0.05;
+	}		
+
+	camera.lookAt( scene.position );
+
+	renderer.setSize( windowHalfX*2, windowHalfY*2 );
+=======
 		// light.position.y += ( - mouseY - camera.position.y ) * .05;
 		light.position.z = 2000 * Math.sin( counter );					
 
@@ -490,6 +707,7 @@ function render() {
 	// camera.position.z = 1000 * Math.sin( timer );
 
 	camera.lookAt( scene.position );
+>>>>>>> Initial Commit
 
 	if(anaglyph) {
 		effect.render( scene, camera );	
@@ -501,12 +719,21 @@ function render() {
 
 function nav_next() {
 	if(scrollPos < 800) { $.scrollTo(800, 2000); }	
+<<<<<<< HEAD
+	if(scrollPos >= 750 && scrollPos < 1800) { $.scrollTo(1800, 2000); }
+	if(scrollPos >= 1750 && scrollPos < 2800) { $.scrollTo(2800, 2000); }
+	if(scrollPos >= 2750 && scrollPos < 3800) { $.scrollTo(3800, 2000); }
+	if(scrollPos >= 3750 && scrollPos < 4800) { $.scrollTo(4800, 2000); }
+	if(scrollPos >= 4750 && scrollPos < 5800) { $.scrollTo(5800, 2000); }
+	if(scrollPos >= 5750 && scrollPos < 10000) { $.scrollTo(6800, 5000); }		
+=======
 	if(scrollPos >= 800 && scrollPos < 1800) { $.scrollTo(1800, 2000); }
 	if(scrollPos >= 1800 && scrollPos < 2800) { $.scrollTo(2800, 2000); }
 	if(scrollPos >= 2800 && scrollPos < 3800) { $.scrollTo(3800, 2000); }
 	if(scrollPos >= 3800 && scrollPos < 4800) { $.scrollTo(4800, 2000); }
 	if(scrollPos >= 4800 && scrollPos < 5800) { $.scrollTo(5800, 2000); }
 	if(scrollPos >= 5800 && scrollPos < 10000) { $.scrollTo(10000, 5000); }		
+>>>>>>> Initial Commit
 }
 
 function nav_prev() {
@@ -534,3 +761,23 @@ function anaglyph_toggle() {
 }
 
 
+<<<<<<< HEAD
+$('.portfolio_image').click(function() {
+
+	$('canvas').hide();
+
+	var index = $(this).parent().children('.portfolio_image').index(this);
+	
+	$('#portfolioDisplay').addClass('visible').find('.portfolio_item:eq(' + index + ')').addClass('visible').find('img').each(function() {
+		var img_url = $(this).attr('data-src-url');
+		$(this).attr('src', img_url);
+	});
+
+});
+
+$('#portfolioDisplay').find('.close').click(function() {
+	$('body div.visible').removeClass('visible');
+	$('canvas').show();
+});
+=======
+>>>>>>> Initial Commit
