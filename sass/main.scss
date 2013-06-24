@@ -526,9 +526,28 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	}
 }
 
-.intro, .design, .code, .experience, .resume, .footer, .skillset {
+.intro, .design, .code, .experience {
+	width: 400px;
+	max-width: 75%;
+
+	margin-top: -200px;
+	// add small screen responsive
+	// tablet
+	@media 
+	#{$media} and ($feature: $tablet)
+	{
+		margin-top: 0;
+	}
+
+	// desktop
+	@media #{$media} and ($feature: $desktop) {
+		margin-top: 0;
+	}
+}
+
+ .resume, .footer, .skillset {
 	width: 960px;
-	max-width: 100%;
+	max-width: 80%;
 
 	margin-top: -200px;
 	// add small screen responsive

@@ -1095,30 +1095,49 @@ blockquote {
 }
 
 /* line 529, ../sass/main.scss */
-.intro, .design, .code, .experience, .resume, .footer, .skillset {
-  width: 960px;
-  max-width: 100%;
+.intro, .design, .code, .experience {
+  width: 400px;
+  max-width: 75%;
   margin-top: -200px;
 }
 @media screen and (min-width: 600px) {
   /* line 529, ../sass/main.scss */
-  .intro, .design, .code, .experience, .resume, .footer, .skillset {
+  .intro, .design, .code, .experience {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
   /* line 529, ../sass/main.scss */
-  .intro, .design, .code, .experience, .resume, .footer, .skillset {
+  .intro, .design, .code, .experience {
     margin-top: 0;
   }
 }
 
 /* line 548, ../sass/main.scss */
+.resume, .footer, .skillset {
+  width: 960px;
+  max-width: 80%;
+  margin-top: -200px;
+}
+@media screen and (min-width: 600px) {
+  /* line 548, ../sass/main.scss */
+  .resume, .footer, .skillset {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 548, ../sass/main.scss */
+  .resume, .footer, .skillset {
+    margin-top: 0;
+  }
+}
+
+/* line 567, ../sass/main.scss */
 .code small {
   color: #2e2e2e;
 }
 
-/* line 552, ../sass/main.scss */
+/* line 571, ../sass/main.scss */
 .skill {
   width: 300px;
   max-width: 100%;

@@ -51,8 +51,6 @@ var hasWebgl = false;
 
 if ( ! Detector.webgl ) {
 	// Detector.addGetWebGLMessage();
-
-
 }
 
 var container;
@@ -417,15 +415,6 @@ function render() {
 			pyramidC.material = materialGray; // materialLine;
 
 			var wireframesDistribution = map(scrollPos, experienceMin, experienceMax, 0, 150);
-
-			// for ( var i = 0; i < wireframes.length; i ++ ) {
-
-			// 	wireframes[i].position.x = ( Math.random() - 0.5 ) * (i*wireframesDistribution);
-			// 	wireframes[i].position.y = ( Math.random() - 0.5 ) * (i*wireframesDistribution);
-			// 	wireframes[i].position.z = ( Math.random() - 0.5 ) * (i*wireframesDistribution);
-			// 	scene.add( wireframes[i] );
-
-			// }
 			
 		}
 
@@ -442,21 +431,21 @@ function render() {
 
 			// meshes[ i ].geometry.faces[ 0 ].materials[ 0 ].color.setHex( 0x0000bb );
 
-			for ( var i = 0; i < wireframes.length; i ++ ) {
-				var colorValueR = map(scrollPos, codeMin, codeMax, 204, 0);
-				colorValueR = Math.floor(colorValueR);
-				console.log("colorValueR: " + colorValueR);
-				var colorValueHex = colorValueR.toString(16);
-				var colorValue = '0x' + colorValueHex + '' + colorValueHex + '' + colorValueHex;
-				console.log(colorValue);
+			// for ( var i = 0; i < wireframes.length; i ++ ) {
+			// 	var colorValueR = map(scrollPos, codeMin, codeMax, 204, 0);
+			// 	colorValueR = Math.floor(colorValueR);
+			// 	console.log("colorValueR: " + colorValueR);
+			// 	var colorValueHex = colorValueR.toString(16);
+			// 	var colorValue = '0x' + colorValueHex + '' + colorValueHex + '' + colorValueHex;
+			// 	console.log(colorValue);
 
-				if(Detector.webgl) {
-					wireframes[i].material = materialLineBlack;
-					// wireframes[i].material.emissive.setHex( 0xff0000 );
-					wireframes[i].material.emissive.setHex( colorValue );
-					scene.remove( wireframes[i] );
-				}
-			}
+			// 	if(Detector.webgl) {
+			// 		wireframes[i].material = materialLineBlack;
+			// 		// wireframes[i].material.emissive.setHex( 0xff0000 );
+			// 		wireframes[i].material.emissive.setHex( colorValue );
+			// 		scene.remove( wireframes[i] );
+			// 	}
+			// }
 			
 		}
 
@@ -544,16 +533,9 @@ function render() {
 
 	if ( light ) {
 		light.position.x = 2000 * Math.cos( counter );
-		// light.position.y += ( - mouseY - camera.position.y ) * .05;
-		light.position.z = 2000 * Math.sin( counter );					
-
-		// light.position.y = 0 - 0.75*Math.sin(counter);
+		light.position.z = 2000 * Math.sin( counter );	
 		counter += 0.05;
 	}		
-
-	// camera.position.x = 1000 * Math.cos( timer );
-	// camera.position.y += ( - mouseY - camera.position.y ) * .05;
-	// camera.position.z = 1000 * Math.sin( timer );
 
 	camera.lookAt( scene.position );
 
