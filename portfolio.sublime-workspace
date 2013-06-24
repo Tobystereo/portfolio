@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 19829,
+				"buffer_size": 19808,
 				"line_ending": "Unix"
 			}
 		}
@@ -1102,7 +1102,7 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 19829,
+						"buffer_size": 19808,
 						"regions":
 						{
 						},

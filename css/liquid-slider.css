@@ -67,8 +67,8 @@
 *******************************************************/
 .liquid-slider-wrapper .liquid-slider {
   /*background: #f2f2f2;*/
-  width: 960px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 960px;
   /* Do not edit below this line */
   float: left;
   overflow: hidden; /*hidden*/
@@ -94,8 +94,8 @@
 * for the entire slider.
 *******************************************************/
 .liquid-slider-wrapper .liquid-slider .panel {  
-  width: 960px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 960px;
   /* Do not edit below this line */
   display: block;
   float: left;

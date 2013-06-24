@@ -31,13 +31,6 @@
  *	Variables 
  */
 
- // Responsive Breakpoints
-
-$media: screen;
-$feature: min-width;
-$tablet: 600px;
-$desktop: 1024px;
-
  // Colors
 
 $col_bg: #999999;
@@ -151,7 +144,12 @@ a {
 	height: auto;
 }
 
+// Responsive Breakpoints
 
+$media: screen;
+$feature: min-width;
+$tablet: 35em;
+$desktop: 70em;
 
 /* 
  *	Global definitions 
@@ -162,8 +160,8 @@ a {
 }	
 
 body {
-	font-size: 12px;
-    font-size: 0.8em;
+	font-size: 16px;
+    font-size: 1em;
     line-height: 1.4;
     margin: 0;
 	color: $col_bg;
@@ -173,17 +171,6 @@ body {
 	background-color: $col_ui_darker;
 	width: 100%; 
 	/*overflow: hidden;*/
-
-	@media #{$media} and ($feature: $tablet) {
-		font-size: 16px;
-    	font-size: 1em;
-	}
-
-	// desktop
-	@media #{$media} and ($feature: $desktop) {
-		font-size: 16px;
-    	font-size: 1em;
-	}
 }
 
 /*
@@ -212,8 +199,8 @@ body {
 }
 
 p {
-	width: 960px;
-	max-width: 90%;
+	width: 100%;
+	max-width: 960px;
 }
 
 .subheading{
@@ -237,8 +224,8 @@ blockquote {
 .jobposition {
 	float: left;
 	width: 400px;
-	max-width: 90%;
-	display: block;
+	// max-width: 100%;
+	// display: block;
 	float: left;
 	// margin-right: 2em;
 
@@ -320,8 +307,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 	& canvas {
 		background-color: $col_ui_darker;
-		width: 100%;
-		height: 100%;
 	}
 }
 
@@ -337,7 +322,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 .nav {
 	position: fixed;
-	top: 0;
+	top: 48%;
 	right: 0;
 
 	& a {
@@ -364,25 +349,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		@include animation(nav_blink 5s 1);
 
 	}
-
-	// add small screen responsive
-	// tablet
-	@media 
-	#{$media} and ($feature: $tablet),
-	only screen and (-webkit-min-device-pixel-ratio : 1.5),
-	only screen and (min-device-pixel-ratio : 1.5)
-	{
-		top: 0;
-	}
-
-	// desktop
-	@media #{$media} and ($feature: $desktop) {
-		top: 48%;
-	}
-
-	
-
-
 }
 
 @include keyframes(nav_blink) {
@@ -407,7 +373,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 }
 
 .anaglyph_toggle {
-	display: none;
 	font-family: 'tobystereo_icons';
 	position: fixed;
 	top: 0;
@@ -426,11 +391,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px; 
 
 		@include transition(all 0.3s ease-out);
-
-		&:hover {
-			color: white;
-			background-color: #4c4c4c;
-		}
 	}
 }
 
@@ -458,8 +418,13 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	}
 }
 
+.anaglyph_toggle {
 
-
+	& a:hover {
+		color: white;
+		background-color: #4c4c4c;
+	}
+}
 
 .contentcontainer {
 	position: absolute;
@@ -470,18 +435,9 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 }
 
 .content {
-	width: 100%;
-	margin: 200px auto 0;
+	width: 96%;
+	margin: 400px auto 0;
 	padding: 2%;
-
-	@media #{$media} and ($feature: $tablet) {
-		margin: 400px auto 0 !important;
-	}
-
-	// desktop
-	@media #{$media} and ($feature: $desktop) {
-		margin: 400px auto 0;
-	}
 }
 
 /* CONTENT ELEMENTS */
@@ -499,105 +455,33 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 .code 		{ top: 4000px; }
 .resume		{ top: 5000px; } 
 .skillset	{ top: 6000px; } 
-.footer		{ top: 7000px;}
+.footer		{ top: 10000px;}
 
 .home {
 	& a {
 		color: mix($col_ui, rgba(125,125,125,.75));
 	}
 
-	top: 200px;
-
 	& .email:hover { color: $col_primary; }
 	& .linkedin:hover { color: $col_linkedin; }
 	& .behance:hover { color: $col_behance; }
 	& .twitter:hover { color: $col_twitter; }
 	& .dribbble:hover { color: $col_5; }
-
-	@media #{$media} and ($feature: $tablet) {
-		top: 315px;
-	}
-
-	// desktop
-	@media #{$media} and ($feature: $desktop) {
-		top: 315px;
-	}
 }
 
 .intro {
 	color: $col_ui_darker;
 	text-align: left;
-
-	width: 180px;
-
-	@media only screen and (min-width: 321px),
-		only screen and (-webkit-min-device-pixel-ratio : 1.5),
-		only screen and (min-device-pixel-ratio : 1.5)
-		{
-			width: 400px;
-		}
-
 	& p {
 		display: block;
 		margin-bottom: -20px;
-		margin-left: 0;
-		width: 100%;
-
-		@media #{$media} and ($feature: $tablet)
-		{
-			margin-left: 40px;
-		}
-	}
-
-	& blockquote {
-
-		margin-left: 0;
-		width: 100%;
-
-		@media #{$media} and ($feature: $tablet)
-		{
-			margin-left: 40px;
-		}
+		margin-left: 40px;
 	}
 }
 
-.intro, .design, .code, .experience {
-	width: 400px;
-	max-width: 75%;
-
-	margin-top: -200px;
-	margin-left: 10px;
-	// add small screen responsive
-	// tablet
-	@media 
-	#{$media} and ($feature: $tablet)
-	{
-		margin-top: 0;
-	}
-
-	// desktop
-	@media #{$media} and ($feature: $desktop) {
-		margin-top: 0;
-	}
-}
-
- .resume, .footer, .skillset {
+.resume, .footer, .skillset {
 	width: 960px;
-	max-width: 75%;
-
-	margin-top: -200px;
-	margin-left: 10px;
-	// add small screen responsive
-	// tablet
-	@media #{$media} and ($feature: $tablet)
-	{
-		margin-top: 0;
-	}
-
-	// desktop
-	@media #{$media} and ($feature: $desktop) {
-		margin-top: 0;
-	}
+	max-width: 100%;
 }
 
 .code small {
@@ -610,120 +494,3 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	display: block;
 	float: left;
 }
-
-.footer {
-	& h1, & p, & a {
-		color: $col_ui_darker !important;
-	}
-}
-
-#portfolioDisplay {
-	
-	overflow: scroll;
-	background-color: transparentize($col_ui_darker, .1);
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	position: fixed;
-	top: 0;
-	left: 0;
-
-	display: none;
-	z-index: -2;
-
-	&.visible {
-		display: block !important;
-		z-index: 9999999 !important;
-	}
-}
-
-.portfolio_item {
-	
-	overflow: scroll;
-	// background-color: transparentize($col_ui_darker, .2);
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	// position: fixed;
-	top: 0;
-	left: 0;
-
-	display: none;
-	// z-index: -2;
-
-	&.visible {
-		display: block !important;
-		z-index: 99999999 !important;
-	}
-
-	& h3 {
-		text-transform: uppercase;
-	}
-
-	& h1, & h2, & h3, & h4, & p, & em, & small, & iframe, & div {
-		margin: 1em auto;
-		width: 600px;
-		max-width: 90%;
-		clear: both;
-		display: block;
-
-		@media #{$media} and ($feature: $tablet)
-		{
-			margin: 1em 40px;
-		}
-
-		// desktop
-		@media #{$media} and ($feature: $desktop) {
-			margin: 1em 40px;
-		}
-	}
-
-	& img {
-		max-width: 100%;
-		margin: 1em auto;
-		clear: both;
-
-		@media #{$media} and ($feature: $tablet)
-		{
-			max-width: 600px;
-			margin: 1em 40px;
-		}
-
-		// desktop
-		@media #{$media} and ($feature: $desktop) {
-			max-width: 600px;
-			margin: 1em 40px;
-		}
-	}
-}
-
-.close {
-	font-family: 'tobystereo_icons';
-	position: fixed;
-	z-index: 99999999999;
-	top: 0;
-	right: 0;
-
-	& a {
-		display: block;
-		width: 60px;
-		height: 60px;
-		text-decoration: none;
-		color: #cccccc;
-		background-color: $col_ui_light;
-		text-align: center;
-		font-size: 24px;
-		padding-top: 15px;
-		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px; 
-
-		@include transition(all 0.3s ease-out);
-
-		&:hover {
-			color: white;
-			background-color: $col_ui_lighter;
-		}
-	}
-}
-
