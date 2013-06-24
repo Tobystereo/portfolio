@@ -356,13 +356,13 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 	// add small screen responsive
 	// tablet
-	// @media 
-	// #{$media} and ($feature: $tablet),
-	// only screen and (-webkit-min-device-pixel-ratio : 1.5),
-	// only screen and (min-device-pixel-ratio : 1.5)
-	// {
-	// 	top: 0;
-	// }
+	@media 
+	#{$media} and ($feature: $tablet),
+	only screen and (-webkit-min-device-pixel-ratio : 1.5),
+	only screen and (min-device-pixel-ratio : 1.5)
+	{
+		top: 0;
+	}
 
 	// desktop
 	@media #{$media} and ($feature: $desktop) {
