@@ -495,12 +495,12 @@ function render() {
 
 function nav_next() {
 	if(scrollPos < 800) { $.scrollTo(800, 2000); }	
-	if(scrollPos >= 800 && scrollPos < 1800) { $.scrollTo(1800, 2000); }
-	if(scrollPos >= 1800 && scrollPos < 2800) { $.scrollTo(2800, 2000); }
-	if(scrollPos >= 2800 && scrollPos < 3800) { $.scrollTo(3800, 2000); }
-	if(scrollPos >= 3800 && scrollPos < 4800) { $.scrollTo(4800, 2000); }
-	if(scrollPos >= 4800 && scrollPos < 5800) { $.scrollTo(5800, 2000); }
-	if(scrollPos >= 5800 && scrollPos < 10000) { $.scrollTo(6800, 5000); }		
+	if(scrollPos >= 750 && scrollPos < 1800) { $.scrollTo(1800, 2000); }
+	if(scrollPos >= 1750 && scrollPos < 2800) { $.scrollTo(2800, 2000); }
+	if(scrollPos >= 2750 && scrollPos < 3800) { $.scrollTo(3800, 2000); }
+	if(scrollPos >= 3750 && scrollPos < 4800) { $.scrollTo(4800, 2000); }
+	if(scrollPos >= 4750 && scrollPos < 5800) { $.scrollTo(5800, 2000); }
+	if(scrollPos >= 5750 && scrollPos < 10000) { $.scrollTo(6800, 5000); }		
 }
 
 function nav_prev() {
