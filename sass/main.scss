@@ -530,8 +530,8 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	& p {
 		display: block;
 		margin-bottom: -20px;
-		margin-left: 5%;
-		width: 90%;
+		margin-left: 0;
+		width: 100%;
 
 		@media 
 		#{$media} and ($feature: $tablet),
@@ -545,7 +545,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	& blockquote {
 
 		margin-left: 5%;
-		width: 90%;
+		width: 100%;
 
 		@media 
 		#{$media} and ($feature: $tablet),
@@ -562,6 +562,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	max-width: 75%;
 
 	margin-top: -200px;
+	margin-left: 10px;
 	// add small screen responsive
 	// tablet
 	@media 
@@ -578,9 +579,10 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
  .resume, .footer, .skillset {
 	width: 960px;
-	max-width: 80%;
+	max-width: 75%;
 
 	margin-top: -200px;
+	margin-left: 10px;
 	// add small screen responsive
 	// tablet
 	@media 
