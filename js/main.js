@@ -13,21 +13,21 @@ $(document).ready(function() {
 
 	} else {
 		hasWebgl = true;
-		adjustAnaglyphToggle();
+		// adjustAnaglyphToggle();
 	}
 
 }); 
 
-function adjustAnaglyphToggle() {
-	if(window.innerWidth < 1024) {
-		$('.anaglyph_toggle').css('right', '60px');
-	} else {
-		$('.anaglyph_toggle').css('right', '0');
-	}
-}
+// function adjustAnaglyphToggle() {
+// 	if(window.innerWidth < 1024) {
+// 		$('.anaglyph_toggle').css('right', '60px');
+// 	} else {
+// 		$('.anaglyph_toggle').css('right', '0');
+// 	}
+// }
 
 var scrollPos = 0;
-$.scrollTo(0, 0);
+// $.scrollTo(0, 0);
 
 
 window.onscroll = function (oEvent) {
@@ -285,15 +285,6 @@ function onWindowResize() {
 
 }
 
-function onDocumentMouseMove( event ) {
-
-	// mouseX = ( event.clientX - windowHalfX );
-	// mouseY = ( event.clientY - windowHalfY );
-
-}
-
-//
-
 function animate() {
 
 	requestAnimationFrame( animate );
@@ -309,44 +300,10 @@ function onDocumentMouseMove(event) {
 	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
 	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
 
-	
-
-	// pyramidA.
-
 }
 
 
 function render() {
-	// camera.position.x += ( mouseX - camera.position.x ) * 0.05;
-	// camera.position.y += ( - mouseY - camera.position.y ) * 0.05;
-
-	// find intersections
-
-	// var vector = new THREE.Vector3( mouse.x, mouse.y, 1 );
-	// projector.unprojectVector( vector, camera );
-
-	// raycaster.set( camera.position, vector.sub( camera.position ).normalize() );
-
-	// var intersects = raycaster.intersectObjects( scene.children );
-
-	// if ( intersects.length > 0 ) {
-
-	// 	if ( INTERSECTED != intersects[ 0 ].object ) {
-
-	// 		if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-
-	// 		INTERSECTED = intersects[ 0 ].object;
-	// 		INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-	// 		INTERSECTED.material.emissive.setHex( col_2 );
-	// 	}
-
-	// } else {
-
-	// 	if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-
-	// 	INTERSECTED = null;
-
-	// }
 
 	if ( pyramidA && pyramidB && pyramidC) {
 		
@@ -428,24 +385,6 @@ function render() {
 			pyramidA.material = materialA;	
 			pyramidB.material = materialGray;
 			pyramidC.material = materialGray;
-
-			// meshes[ i ].geometry.faces[ 0 ].materials[ 0 ].color.setHex( 0x0000bb );
-
-			// for ( var i = 0; i < wireframes.length; i ++ ) {
-			// 	var colorValueR = map(scrollPos, codeMin, codeMax, 204, 0);
-			// 	colorValueR = Math.floor(colorValueR);
-			// 	console.log("colorValueR: " + colorValueR);
-			// 	var colorValueHex = colorValueR.toString(16);
-			// 	var colorValue = '0x' + colorValueHex + '' + colorValueHex + '' + colorValueHex;
-			// 	console.log(colorValue);
-
-			// 	if(Detector.webgl) {
-			// 		wireframes[i].material = materialLineBlack;
-			// 		// wireframes[i].material.emissive.setHex( 0xff0000 );
-			// 		wireframes[i].material.emissive.setHex( colorValue );
-			// 		scene.remove( wireframes[i] );
-			// 	}
-			// }
 			
 		}
 
