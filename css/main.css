@@ -1126,7 +1126,7 @@ blockquote {
 }
 /* line 545, ../sass/main.scss */
 .intro blockquote {
-  margin-left: 5%;
+  margin-left: 0;
   width: 100%;
 }
 @media screen and (min-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
