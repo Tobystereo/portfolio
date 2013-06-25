@@ -34,6 +34,11 @@ window.onscroll = function (oEvent) {
   // called when the window is scrolled.
   scrollPos = $(document).scrollTop();
   $('.scrollPos').text(scrollPos);
+  if(scrollPos > 800) { 
+  	$('.home').hide(); 
+  } else {
+  	$('.home').show(); 
+  }
 }
 
 function goto(location) {
