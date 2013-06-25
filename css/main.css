@@ -1115,8 +1115,8 @@ blockquote {
 .intro p {
   display: block;
   margin-bottom: -20px;
-  margin-left: 5%;
-  width: 90%;
+  margin-left: 0;
+  width: 100%;
 }
 @media screen and (min-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 530, ../sass/main.scss */
@@ -1127,7 +1127,7 @@ blockquote {
 /* line 545, ../sass/main.scss */
 .intro blockquote {
   margin-left: 5%;
-  width: 90%;
+  width: 100%;
 }
 @media screen and (min-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 545, ../sass/main.scss */
@@ -1141,6 +1141,7 @@ blockquote {
   width: 400px;
   max-width: 75%;
   margin-top: -200px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 600px) {
   /* line 560, ../sass/main.scss */
@@ -1155,31 +1156,32 @@ blockquote {
   }
 }
 
-/* line 579, ../sass/main.scss */
+/* line 580, ../sass/main.scss */
 .resume, .footer, .skillset {
   width: 960px;
-  max-width: 80%;
+  max-width: 75%;
   margin-top: -200px;
+  margin-left: 10px;
 }
 @media screen and (min-width: 600px) {
-  /* line 579, ../sass/main.scss */
+  /* line 580, ../sass/main.scss */
   .resume, .footer, .skillset {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 579, ../sass/main.scss */
+  /* line 580, ../sass/main.scss */
   .resume, .footer, .skillset {
     margin-top: 0;
   }
 }
 
-/* line 598, ../sass/main.scss */
+/* line 600, ../sass/main.scss */
 .code small {
   color: #2e2e2e;
 }
 
-/* line 602, ../sass/main.scss */
+/* line 604, ../sass/main.scss */
 .skill {
   width: 300px;
   max-width: 100%;
