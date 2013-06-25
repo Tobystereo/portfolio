@@ -407,7 +407,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 }
 
 .anaglyph_toggle {
-	display: block;
+	display: none;
 	font-family: 'tobystereo_icons';
 	position: fixed;
 	top: 0;
@@ -470,9 +470,18 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 }
 
 .content {
-	width: 96%;
-	margin: 400px auto 0;
+	width: 100%;
+	margin: 200px auto 0;
 	padding: 2%;
+
+	@media #{$media} and ($feature: $tablet) {
+		margin: 400px auto 0 !important;
+	}
+
+	// desktop
+	@media #{$media} and ($feature: $desktop) {
+		margin: 400px auto 0;
+	}
 }
 
 /* CONTENT ELEMENTS */
@@ -497,11 +506,22 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		color: mix($col_ui, rgba(125,125,125,.75));
 	}
 
+	top: 200px;
+
 	& .email:hover { color: $col_primary; }
 	& .linkedin:hover { color: $col_linkedin; }
 	& .behance:hover { color: $col_behance; }
 	& .twitter:hover { color: $col_twitter; }
 	& .dribbble:hover { color: $col_5; }
+
+	@media #{$media} and ($feature: $tablet) {
+		top: 315px;
+	}
+
+	// desktop
+	@media #{$media} and ($feature: $desktop) {
+		top: 315px;
+	}
 }
 
 .intro {
