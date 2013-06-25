@@ -162,8 +162,8 @@ a {
 }	
 
 body {
-	font-size: 16px;
-    font-size: 1em;
+	font-size: 12px;
+    font-size: 0.8em;
     line-height: 1.4;
     margin: 0;
 	color: $col_bg;
@@ -173,6 +173,17 @@ body {
 	background-color: $col_ui_darker;
 	width: 100%; 
 	/*overflow: hidden;*/
+
+	@media #{$media} and ($feature: $tablet) {
+		font-size: 16px;
+    	font-size: 1em;
+	}
+
+	// desktop
+	@media #{$media} and ($feature: $desktop) {
+		font-size: 16px;
+    	font-size: 1em;
+	}
 }
 
 /*
