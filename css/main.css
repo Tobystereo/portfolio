@@ -929,7 +929,7 @@ blockquote {
 
 /* line 409, ../sass/main.scss */
 .anaglyph_toggle {
-  display: block;
+  display: none;
   font-family: 'tobystereo_icons';
   position: fixed;
   top: 0;
@@ -1000,90 +1000,118 @@ blockquote {
 
 /* line 472, ../sass/main.scss */
 .content {
-  width: 96%;
-  margin: 400px auto 0;
+  width: 100%;
+  margin: 200px auto 0;
   padding: 2%;
+}
+@media screen and (min-width: 600px) {
+  /* line 472, ../sass/main.scss */
+  .content {
+    margin: 400px auto 0 !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 472, ../sass/main.scss */
+  .content {
+    margin: 400px auto 0;
+  }
 }
 
 /* CONTENT ELEMENTS */
-/* line 480, ../sass/main.scss */
+/* line 489, ../sass/main.scss */
 .home, .intro, .experience, .design, .code, .footer, .resume, .skillset {
   position: absolute;
   width: 400px;
   max-width: 100%;
 }
 
-/* line 486, ../sass/main.scss */
+/* line 495, ../sass/main.scss */
 .home {
   top: 315px;
 }
 
-/* line 487, ../sass/main.scss */
+/* line 496, ../sass/main.scss */
 .intro {
   top: 1000px;
 }
 
-/* line 488, ../sass/main.scss */
+/* line 497, ../sass/main.scss */
 .design {
   top: 2000px;
 }
 
-/* line 489, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 .experience {
   top: 3000px;
 }
 
-/* line 490, ../sass/main.scss */
+/* line 499, ../sass/main.scss */
 .code {
   top: 4000px;
 }
 
-/* line 491, ../sass/main.scss */
+/* line 500, ../sass/main.scss */
 .resume {
   top: 5000px;
 }
 
-/* line 492, ../sass/main.scss */
+/* line 501, ../sass/main.scss */
 .skillset {
   top: 6000px;
 }
 
-/* line 493, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 .footer {
   top: 10000px;
 }
 
-/* line 496, ../sass/main.scss */
+/* line 504, ../sass/main.scss */
+.home {
+  top: 200px;
+}
+/* line 505, ../sass/main.scss */
 .home a {
   color: rgba(75, 75, 75, 0.875);
 }
-/* line 500, ../sass/main.scss */
+/* line 511, ../sass/main.scss */
 .home .email:hover {
   color: #f7666e;
 }
-/* line 501, ../sass/main.scss */
+/* line 512, ../sass/main.scss */
 .home .linkedin:hover {
   color: #9a4ffd;
 }
-/* line 502, ../sass/main.scss */
+/* line 513, ../sass/main.scss */
 .home .behance:hover {
   color: #573ce6;
 }
-/* line 503, ../sass/main.scss */
+/* line 514, ../sass/main.scss */
 .home .twitter:hover {
   color: #4357fe;
 }
-/* line 504, ../sass/main.scss */
+/* line 515, ../sass/main.scss */
 .home .dribbble:hover {
   color: #f75bfb;
 }
+@media screen and (min-width: 600px) {
+  /* line 504, ../sass/main.scss */
+  .home {
+    top: 315px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 504, ../sass/main.scss */
+  .home {
+    top: 315px;
+  }
+}
 
-/* line 507, ../sass/main.scss */
+/* line 527, ../sass/main.scss */
 .intro {
   color: #1e1e1e;
   text-align: left;
 }
-/* line 510, ../sass/main.scss */
+/* line 530, ../sass/main.scss */
 .intro p {
   display: block;
   margin-bottom: -20px;
@@ -1091,67 +1119,67 @@ blockquote {
   width: 90%;
 }
 @media screen and (min-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 510, ../sass/main.scss */
+  /* line 530, ../sass/main.scss */
   .intro p {
     margin-left: 40px;
   }
 }
-/* line 525, ../sass/main.scss */
+/* line 545, ../sass/main.scss */
 .intro blockquote {
   margin-left: 5%;
   width: 90%;
 }
 @media screen and (min-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 525, ../sass/main.scss */
+  /* line 545, ../sass/main.scss */
   .intro blockquote {
     margin-left: 40px;
   }
 }
 
-/* line 540, ../sass/main.scss */
+/* line 560, ../sass/main.scss */
 .intro, .design, .code, .experience {
   width: 400px;
   max-width: 75%;
   margin-top: -200px;
 }
 @media screen and (min-width: 600px) {
-  /* line 540, ../sass/main.scss */
+  /* line 560, ../sass/main.scss */
   .intro, .design, .code, .experience {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 540, ../sass/main.scss */
+  /* line 560, ../sass/main.scss */
   .intro, .design, .code, .experience {
     margin-top: 0;
   }
 }
 
-/* line 559, ../sass/main.scss */
+/* line 579, ../sass/main.scss */
 .resume, .footer, .skillset {
   width: 960px;
   max-width: 80%;
   margin-top: -200px;
 }
 @media screen and (min-width: 600px) {
-  /* line 559, ../sass/main.scss */
+  /* line 579, ../sass/main.scss */
   .resume, .footer, .skillset {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 559, ../sass/main.scss */
+  /* line 579, ../sass/main.scss */
   .resume, .footer, .skillset {
     margin-top: 0;
   }
 }
 
-/* line 578, ../sass/main.scss */
+/* line 598, ../sass/main.scss */
 .code small {
   color: #2e2e2e;
 }
 
-/* line 582, ../sass/main.scss */
+/* line 602, ../sass/main.scss */
 .skill {
   width: 300px;
   max-width: 100%;
