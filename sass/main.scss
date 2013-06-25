@@ -527,16 +527,23 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 .intro {
 	color: $col_ui_darker;
 	text-align: left;
+
+	width: 180px;
+
+	@media only screen and (min-width: 321px),
+		only screen and (-webkit-min-device-pixel-ratio : 1.5),
+		only screen and (min-device-pixel-ratio : 1.5)
+		{
+			width: 400px;
+		}
+
 	& p {
 		display: block;
 		margin-bottom: -20px;
 		margin-left: 0;
 		width: 100%;
 
-		@media 
-		#{$media} and ($feature: $tablet),
-		only screen and (-webkit-min-device-pixel-ratio : 1.5),
-		only screen and (min-device-pixel-ratio : 1.5)
+		@media #{$media} and ($feature: $tablet)
 		{
 			margin-left: 40px;
 		}

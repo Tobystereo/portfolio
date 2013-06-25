@@ -1110,33 +1110,40 @@ blockquote {
 .intro {
   color: #1e1e1e;
   text-align: left;
+  width: 180px;
 }
-/* line 530, ../sass/main.scss */
+@media only screen and (min-width: 321px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 527, ../sass/main.scss */
+  .intro {
+    width: 400px;
+  }
+}
+/* line 540, ../sass/main.scss */
 .intro p {
   display: block;
   margin-bottom: -20px;
   margin-left: 0;
   width: 100%;
 }
-@media screen and (min-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 530, ../sass/main.scss */
+@media screen and (min-width: 600px) {
+  /* line 540, ../sass/main.scss */
   .intro p {
     margin-left: 40px;
   }
 }
-/* line 545, ../sass/main.scss */
+/* line 552, ../sass/main.scss */
 .intro blockquote {
   margin-left: 0;
   width: 100%;
 }
 @media screen and (min-width: 600px), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 545, ../sass/main.scss */
+  /* line 552, ../sass/main.scss */
   .intro blockquote {
     margin-left: 40px;
   }
 }
 
-/* line 560, ../sass/main.scss */
+/* line 567, ../sass/main.scss */
 .intro, .design, .code, .experience {
   width: 400px;
   max-width: 75%;
@@ -1144,19 +1151,19 @@ blockquote {
   margin-left: 10px;
 }
 @media screen and (min-width: 600px) {
-  /* line 560, ../sass/main.scss */
+  /* line 567, ../sass/main.scss */
   .intro, .design, .code, .experience {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 560, ../sass/main.scss */
+  /* line 567, ../sass/main.scss */
   .intro, .design, .code, .experience {
     margin-top: 0;
   }
 }
 
-/* line 580, ../sass/main.scss */
+/* line 587, ../sass/main.scss */
 .resume, .footer, .skillset {
   width: 960px;
   max-width: 75%;
@@ -1164,24 +1171,24 @@ blockquote {
   margin-left: 10px;
 }
 @media screen and (min-width: 600px) {
-  /* line 580, ../sass/main.scss */
+  /* line 587, ../sass/main.scss */
   .resume, .footer, .skillset {
     margin-top: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  /* line 580, ../sass/main.scss */
+  /* line 587, ../sass/main.scss */
   .resume, .footer, .skillset {
     margin-top: 0;
   }
 }
 
-/* line 600, ../sass/main.scss */
+/* line 607, ../sass/main.scss */
 .code small {
   color: #2e2e2e;
 }
 
-/* line 604, ../sass/main.scss */
+/* line 611, ../sass/main.scss */
 .skill {
   width: 300px;
   max-width: 100%;
