@@ -440,8 +440,8 @@ function render() {
 			pyramidC.material = materialC;
 		}
 
-		var transitionEMin = 6800;
-		var transitionEMax = 7200;
+		var transitionEMin = 6400;
+		var transitionEMax = 6800;
 		if(scrollPos > transitionEMin && scrollPos <= transitionEMax) {
 
 			camera.position.z = map(scrollPos, transitionEMin, transitionEMax, 600, 60);	
@@ -495,7 +495,7 @@ function nav_next() {
 	if(scrollPos >= 2800 && scrollPos < 3800) { $.scrollTo(3800, 2000); }
 	if(scrollPos >= 3800 && scrollPos < 4800) { $.scrollTo(4800, 2000); }
 	if(scrollPos >= 4800 && scrollPos < 5800) { $.scrollTo(5800, 2000); }
-	if(scrollPos >= 5800 && scrollPos < 10000) { $.scrollTo(10000, 5000); }		
+	if(scrollPos >= 5800 && scrollPos < 10000) { $.scrollTo(6800, 5000); }		
 }
 
 function nav_prev() {
