@@ -1,0 +1,245 @@
+!!! 5
+-# paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+<!--[if lt IE 7]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+%html.no-js{ :lang => "en" }
+  <!--<![endif]-->
+  %head
+    %meta{ :charset => "utf-8" }/
+    
+    -# Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    -# Remove this if you use the .htaccess
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1" }/
+    
+    %title Tobystereo.com — The Portfolio of Tobias Treppmann
+    %meta{ :name => "", :content => "" }/
+    %meta{ :name => "", :content => "" }/
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }/
+ 
+    %link{ :href => "css/style.css?v=1", :media => "all", :rel => "stylesheet" }/
+    %script{ :src => "js/libs/modernizr-2.0.6.min.js" }
+    
+  %body
+    =yield
+
+    .container
+      .nav
+        %a{:class => "previous", :href => "javascript:nav_prev();"} &#9650;
+        %a{:class => "next", :href => "javascript:nav_next();"} &#9660;
+      
+      .anaglyph_toggle
+        %a{:class => "strikethrough", :href => "javascript:anaglyph_toggle();"} glasses
+          %span
+          %span
+
+    .content
+      .home
+        %h1 Tobias Treppmann
+        %p{:class => "subheading"}= Designer, Storyteller, coder
+        %p= 427 Church St
+          %br/
+          Lancaster, PA 17602
+        %p
+          %a{:class => "email", :href => "mailto:hello@tobystereo.com"} Email
+          %a{:class => "Linkedin", :href => "http://www.linkedin.com/in/tobiastreppmann/"} LinkedIn
+          %a{:class => "behance", :href => "http://www.behance.net/tobystereo"} Behance
+          %a{:class => "twitter", :href => "http://www.twitter.com/tobystereo"} Twitter
+          %a{:class => "dribbble", :href => "http://www.dribbble.com/tobystereo"} Dribbble
+
+      .intro
+        %p= The three dimensions of design
+        %blockquote<
+          “Design is not just what it 
+          %em{:class => "quote_visual"}=looks 
+          like and 
+          %em{:class => "quote_experience"}=feels 
+          like. Design is how it 
+          %em{:class => "quote_code"}=works 
+          ”
+          %br/
+          %small= &mdash; Steve Jobs
+          "
+
+      .design
+        %h1 Visual Design:
+        %p{:class => "subheading"}= I design to solve problems, to tell compelling stories of brands, products and individuals, creating intuitive access to information and interaction.
+      
+      .experience
+        %h1 Experience Design:
+        %p{:class => "subheading"}= I believe in researching and solving problems from a human-centered perspective and creating solutions that are innovative and effective.
+      
+      .code
+        %h1 Code Design:
+        %p{:class => "subheading"}= I write semantic code, create interactive prototypes and hack hardware such as Arduinos and kinects. I also have an affinity for creative code and generative design.
+
+      .resume
+        %h1 Resume:
+        %p{:class => "subheading"}= Work Experience
+        #slider-id.liquid-slider
+          %div
+            .jobposition
+              %h3 User Experience Designer
+                %br/
+                %span= andCulture 2012-2013
+                .jobdescription
+                  %p= Worked on a variety of User Experience and Web Design projects including web apps, mobile
+                    apps, interactive installations and websites for clients such as NeighborWorks America, Mount the Nittany Health Sustem, PAInc, Team PA and Cisco.
+            .jobposition
+              %h3 Web Designer
+                %br/
+                %span= HOPE International 2009-2012
+                .jobdescription
+                  %p= Designed and developed several websites for the HOPE International brand, spearheaded the move towards responsive websites that allow full access to all content on all devices and eliminates the need to pay for and maintain separate mobile websites.
+          %div
+            .jobposition
+              %h3 Web Designer
+                %br/
+                %span= Bajaa.com 2000-2003 &amp; 2008-2009
+                .jobdescription
+                  %p= Designed several websites and intranet user interfaces, from small business sites, to intranet solutions and multimedia applications.
+            .jobposition
+              %h3 Designer
+                %br/
+                %span= Freelance 2003-2008
+                .jobdescription
+                  %p= Various Graphic Design and Web Design projects.
+          %div
+            .jobposition
+              %h3 E-Commerce Assistant
+                %br/
+                %span= Westfalia Werkzeugcompany GmbH 1999
+                .jobdescription
+                  %p= Online-store inventory management
+        .skillset
+          %h1 Skillset
+            .skill
+              %h2 Visual Design
+              %p
+                %ul
+                  %li=Branding
+                  %li=Typograhpy
+                  %li=Responsive Web Design
+                  %li=Mobile Interface Design
+                  %li=Screen Design
+                  %li=Logo Design
+                  %li=Print Design
+                  %li=Photoshop
+                  %li=Illustrator
+                  %li=InDesign
+                  %li=Video Production
+                  %li=Video Editing
+                  %li=Postprocessing
+                  %li=Generative Design
+            .skill
+              %h2 Experience Design
+              %p
+                %ul
+                  %li=Problem Solving
+                  %li=Human Centered Design
+                  %li=Interaction Design
+                  %li=Storytelling
+                  %li=Visualizations
+                  %li=Cultural Understanding
+                  %li=Wireframing
+                  %li=Storyboarding
+                  %li=Research
+                  %li=Single and group interviews
+                  %li=Omnigraffle
+                  %li=Illustrator
+                  %li=Agile
+                  %li=Whiteboard
+            .skill
+              %h2 Visual Design
+              %p
+                %ul
+                  %li=Creative Coding
+                  %li=Rapid Prototyping
+                  %li=Responsive Web Design
+                  %li=Front-end Development
+                  %li=HTML5
+                  %li=CSS3/SASS/Compass
+                  %li=JavaScript/jQuery
+                  %li=Version Control: Git
+                  %li=three.js, processing.js
+                  %li=Wordpress
+                  %li=PHP
+                  %li=Java
+                  %li=Processing / openFrameworks
+                  %li=Hardware Hacking (Arduino, Kinect)
+          .footer
+            %h1 Work Samples
+            %p= Interested? Get in touch: 
+              %a{:href => "mailto:hello@tobystereo.com"}= hello@tobystereo.com
+            .portfolio_image
+              %a{:target ="_new", :href => "http://www.behance.net/gallery/Opera-Lancaster/9337785"}
+                %img{:alt => "Opera Lancaster", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9337785/084626522b556f8a8140cb5df080ca8d.png", :title => "Opera Lancaster"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/HeatMapper/9311491"} 
+                %img{:alt => "Heat Mapper", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9311491/4ac00566e76e29703c0c034fb5cbea27.png", :stitle => "Heat Mapper"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/HOPE-International/9306857"}  
+                %img{:alt => "HOPE International", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9306857/ca53829579a438ad1708df528cc00467.png", :stitle => "HOPE International"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/Bravo-Foundation/9305009"} 
+                %img{:alt => "Bravo Foundation", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9305009/648e3c37a58705a7b84a33ea765383f1.png", :stitle => "Bravo Foundation"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/Neighborworks-America/9288353"} 
+                %img{:alt => "Neighborworks America", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9288353/d877dd1bfb0ac7cf55b28caa99bc4903.jpg", :stitle => "Neighborworks America"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/Workshop-Icon-Fonts-2013-BarCamp-Harrisburg/9292077"} 
+                %img{:alt => "BarCamp Harrisburg", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9292077/01be43c527ebf54fa9ba7bf7d68b7707.jpg", :stitle => "BarCamp Harrisburg"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/Hoppy-Beer-App/9284945"} 
+                %img{:alt => "Hoppy", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9284945/f6dd4fed0ddd8beeed385d9b7ecc9c5e.png", :stitle => "Hoppy"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/MemSQL/9284501"} 
+                %img{:alt => "MemSQL", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9284501/7fddae54d7ce9e72fcebc02a20390f73.png", :stitle => "MemSQL"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/GoodData/9284075"} 
+                %img{:alt => "GoodData", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9284075/a7c09300e26e6c438483e2cb3c173aa8.png", :stitle => "GoodData"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/BT-GRP/9283643"} 
+                %img{:alt => "BTGRP", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/9283643/4c68f98e6fc8726fc11d8372d04e28c9.png", :stitle => "BTGRP"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/2012-Entrepreneurs-Conference-Website/3250003"} 
+                %img{:alt => "Entrepreneurs conference", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/3250003/1b8b6a3db20e9a9f2c4ee111fcd325cf.jpg", :stitle => "Entrepreneurs conference"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/Pathways-out-of-Poverty/3250091"} 
+                %img{:alt => "Pathways out of Poverty", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/3250091/1dcc5297ebf8ff6a3210e293f1dc6da1.jpg", :stitle => "Pathways our of POverty"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/Leap-Forward/3249895"} 
+                %img{:alt => "Leap Forward 2012", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/3249895/f7cb5620e7d2f80b7f698031bbaa4f24.jpg", :stitle => "Leap Forward 2012"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/HOPE-and-Music/2910359"} 
+                %img{:alt => "HOPE and Music", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/2910359/f7c86d13a15b365d2c6a6ee02d4f96a3.jpg", :stitle => "HOPE and Music"}
+            .portfolio_image
+              %a{:target => "_new", :href => "http://www.behance.net/gallery/Peter-K-Greer-Professional-Blog/2910225"} 
+                %img{:alt => "Peter Greer", :src => "http://behance.vo.llnwd.net/profiles2/210142/projects/2910225/7961856c5b8095576ed32f459cb6d08d.jpg", :stitle => "Peter Greer"}
+
+    -# 
+      Javascript at the bottom for fast page loading
+      Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary
+    %script{ :src => "//ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.js" }
+    :javascript
+      window.jQuery || document.write("<script src='js/jquery.min.js'>\x3C/script>")
+    
+    %script{ :src => "js/plugins.js?v=1" }
+    %script{ :src => "js/main.js?v=1" }
+    %script{ :src => "js/three.min.js"}
+    %script{ :src => "js/detector.js"}
+    %script{ :src => "js/AnaglyphEffect.js"}
+    %script{ :src => "js/jquery.scrollTo-1.4.3.1-min.js"}
+    %script{ :src => "js/jquery.easing.1.3.js"}
+    %script{ :src => "js/jquery.liquid-slider-custom.min.js"}
+    %script{ :src => "js/jquery.touchSwipe.min.js"}
+
+    
+    -#  asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
+    -#  change the UA-XXXXX-X to be your site's ID
+    :javascript
+      var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"],["_trackPageLoadTime"]];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+      g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+      s.parentNode.insertBefore(g,s)}(document,"script"));

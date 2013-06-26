@@ -589,8 +589,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	margin-left: 10px;
 	// add small screen responsive
 	// tablet
-	@media 
-	#{$media} and ($feature: $tablet)
+	@media #{$media} and ($feature: $tablet)
 	{
 		margin-top: 0;
 	}
