@@ -657,6 +657,7 @@ blockquote {
   float: left;
   width: 400px;
   max-width: 90%;
+  display: block;
   float: left;
 }
 /* line 245, ../sass/main.scss */
