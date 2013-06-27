@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+
 	if(window.innerWidth > 786) {
 		$('#slider-id').liquidSlider({
 			autoSlide:false,
@@ -528,3 +530,20 @@ function anaglyph_toggle() {
 }
 
 
+$('.portfolio_image').click(function() {
+
+	$('canvas').hide();
+
+	var index = $(this).parent().children('.portfolio_image').index(this);
+	
+	$('#portfolioDisplay').addClass('visible').find('.portfolio_item:eq(' + index + ')').addClass('visible').find('img').each(function() {
+		var img_url = $(this).attr('data-src-url');
+		$(this).attr('src', img_url);
+	});
+
+});
+
+$('#portfolioDisplay').find('.close').click(function() {
+	$('body div.visible').removeClass('visible');
+	$('canvas').show();
+});
