@@ -1,10 +1,6 @@
 # Require any additional compass plugins here.
 
-<<<<<<< HEAD
 # require "animate"
-=======
-require "animate"
->>>>>>> Initial Commit
 
 # Set this to the root of your project when deployed:
 http_path = "/"

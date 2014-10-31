@@ -31,7 +31,6 @@
  *	Variables 
  */
 
-<<<<<<< HEAD
  // Responsive Breakpoints
 
 $media: screen;
@@ -39,8 +38,6 @@ $feature: min-width;
 $tablet: 600px;
 $desktop: 1024px;
 
-=======
->>>>>>> Initial Commit
  // Colors
 
 $col_bg: #999999;
@@ -154,16 +151,7 @@ a {
 	height: auto;
 }
 
-<<<<<<< HEAD
 
-=======
-// Responsive Breakpoints
-
-$media: screen;
-$feature: min-width;
-$tablet: 35em;
-$desktop: 70em;
->>>>>>> Initial Commit
 
 /* 
  *	Global definitions 
@@ -174,13 +162,8 @@ $desktop: 70em;
 }	
 
 body {
-<<<<<<< HEAD
 	font-size: 12px;
     font-size: 0.8em;
-=======
-	font-size: 16px;
-    font-size: 1em;
->>>>>>> Initial Commit
     line-height: 1.4;
     margin: 0;
 	color: $col_bg;
@@ -190,7 +173,6 @@ body {
 	background-color: $col_ui_darker;
 	width: 100%; 
 	/*overflow: hidden;*/
-<<<<<<< HEAD
 
 	@media #{$media} and ($feature: $tablet) {
 		font-size: 16px;
@@ -202,8 +184,6 @@ body {
 		font-size: 16px;
     	font-size: 1em;
 	}
-=======
->>>>>>> Initial Commit
 }
 
 /*
@@ -232,13 +212,8 @@ body {
 }
 
 p {
-<<<<<<< HEAD
 	width: 960px;
 	max-width: 90%;
-=======
-	width: 100%;
-	max-width: 960px;
->>>>>>> Initial Commit
 }
 
 .subheading{
@@ -262,13 +237,8 @@ blockquote {
 .jobposition {
 	float: left;
 	width: 400px;
-<<<<<<< HEAD
 	max-width: 90%;
 	display: block;
-=======
-	// max-width: 100%;
-	// display: block;
->>>>>>> Initial Commit
 	float: left;
 	// margin-right: 2em;
 
@@ -350,11 +320,8 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 	& canvas {
 		background-color: $col_ui_darker;
-<<<<<<< HEAD
 		width: 100%;
 		height: 100%;
-=======
->>>>>>> Initial Commit
 	}
 }
 
@@ -370,11 +337,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 .nav {
 	position: fixed;
-<<<<<<< HEAD
 	top: 0;
-=======
-	top: 48%;
->>>>>>> Initial Commit
 	right: 0;
 
 	& a {
@@ -401,7 +364,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		@include animation(nav_blink 5s 1);
 
 	}
-<<<<<<< HEAD
 
 	// add small screen responsive
 	// tablet
@@ -421,8 +383,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	
 
 
-=======
->>>>>>> Initial Commit
 }
 
 @include keyframes(nav_blink) {
@@ -447,10 +407,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 }
 
 .anaglyph_toggle {
-<<<<<<< HEAD
 	display: none;
-=======
->>>>>>> Initial Commit
 	font-family: 'tobystereo_icons';
 	position: fixed;
 	top: 0;
@@ -469,14 +426,11 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px; 
 
 		@include transition(all 0.3s ease-out);
-<<<<<<< HEAD
 
 		&:hover {
 			color: white;
 			background-color: #4c4c4c;
 		}
-=======
->>>>>>> Initial Commit
 	}
 }
 
@@ -504,18 +458,8 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	}
 }
 
-<<<<<<< HEAD
 
 
-=======
-.anaglyph_toggle {
-
-	& a:hover {
-		color: white;
-		background-color: #4c4c4c;
-	}
-}
->>>>>>> Initial Commit
 
 .contentcontainer {
 	position: absolute;
@@ -526,7 +470,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 }
 
 .content {
-<<<<<<< HEAD
 	width: 100%;
 	margin: 200px auto 0;
 	padding: 2%;
@@ -539,11 +482,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	@media #{$media} and ($feature: $desktop) {
 		margin: 400px auto 0;
 	}
-=======
-	width: 96%;
-	margin: 400px auto 0;
-	padding: 2%;
->>>>>>> Initial Commit
 }
 
 /* CONTENT ELEMENTS */
@@ -561,28 +499,20 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 .code 		{ top: 4000px; }
 .resume		{ top: 5000px; } 
 .skillset	{ top: 6000px; } 
-<<<<<<< HEAD
 .footer		{ top: 7000px;}
-=======
-.footer		{ top: 10000px;}
->>>>>>> Initial Commit
 
 .home {
 	& a {
 		color: mix($col_ui, rgba(125,125,125,.75));
 	}
 
-<<<<<<< HEAD
 	top: 200px;
 
-=======
->>>>>>> Initial Commit
 	& .email:hover { color: $col_primary; }
 	& .linkedin:hover { color: $col_linkedin; }
 	& .behance:hover { color: $col_behance; }
 	& .twitter:hover { color: $col_twitter; }
 	& .dribbble:hover { color: $col_5; }
-<<<<<<< HEAD
 
 	@media #{$media} and ($feature: $tablet) {
 		top: 315px;
@@ -592,14 +522,11 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	@media #{$media} and ($feature: $desktop) {
 		top: 315px;
 	}
-=======
->>>>>>> Initial Commit
 }
 
 .intro {
 	color: $col_ui_darker;
 	text-align: left;
-<<<<<<< HEAD
 
 	width: 180px;
 
@@ -671,18 +598,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	@media #{$media} and ($feature: $desktop) {
 		margin-top: 0;
 	}
-=======
-	& p {
-		display: block;
-		margin-bottom: -20px;
-		margin-left: 40px;
-	}
-}
-
-.resume, .footer, .skillset {
-	width: 960px;
-	max-width: 100%;
->>>>>>> Initial Commit
 }
 
 .code small {
@@ -694,7 +609,6 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	max-width: 100%;
 	display: block;
 	float: left;
-<<<<<<< HEAD
 }
 
 .footer {
@@ -813,6 +727,3 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	}
 }
 
-=======
-}
->>>>>>> Initial Commit
