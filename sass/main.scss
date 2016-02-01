@@ -2,17 +2,16 @@
 @import "h5bp";
 @include h5bp-normalize;
 @include h5bp-base-styles;
-@include h5bp-chromeframe;
 @import "fonts";
 
-/* 
+/*
  *	Mixins
  */
 
 // keyframes mixin
 @mixin keyframes($name) {
   @-webkit-keyframes #{$name} {
-    @content; 
+    @content;
   }
   @-moz-keyframes #{$name} {
     @content;
@@ -22,13 +21,13 @@
   }
   @keyframes #{$name} {
     @content;
-  } 
+  }
 }
- 
 
 
-/* 
- *	Variables 
+
+/*
+ *	Variables
  */
 
  // Responsive Breakpoints
@@ -41,11 +40,11 @@ $desktop: 1024px;
  // Colors
 
 $col_bg: #999999;
-$col_1: #FB875B; 
-$col_2: #E06451; 
-$col_3: #f7666e; 
-$col_4: #E051A1; 
-$col_5: #F75BFB; 
+$col_1: #FB875B;
+$col_2: #E06451;
+$col_3: #f7666e;
+$col_4: #E051A1;
+$col_5: #F75BFB;
 
 $col_linkedin: #9A4FFD;
 $col_behance: #573CE6;
@@ -70,11 +69,11 @@ $col_ui_lightest: #fff;
 }
 
 .color_swatch {
-	display: block; 
+	display: block;
 	float: left;
-	width: 8.33333%; 
-	height: 5px; 
-	color: $col_1; 
+	width: 8.33333%;
+	height: 5px;
+	color: $col_1;
 }
 
 a {
@@ -97,7 +96,7 @@ a {
 .col_1 { @extend .color_swatch;  background-color: $col_1;  }
 .col_2 { @extend .color_swatch;  background-color: $col_2;  }
 .col_3 { @extend .color_swatch;  background-color: $col_3;  }
-.col_4 { @extend .color_swatch;  background-color: $col_4;  } 
+.col_4 { @extend .color_swatch;  background-color: $col_4;  }
 .col_5 { @extend .color_swatch;  background-color: $col_5;  }
 
 .liquid-slider-wrapper {
@@ -153,13 +152,13 @@ a {
 
 
 
-/* 
- *	Global definitions 
+/*
+ *	Global definitions
  */
 
 * {
 	@include box-sizing(border-box);
-}	
+}
 
 body {
 	font-size: 12px;
@@ -171,7 +170,7 @@ body {
 	font-weight: 200;
 	font-style: normal;
 	background-color: $col_ui_darker;
-	width: 100%; 
+	width: 100%;
 	/*overflow: hidden;*/
 
 	@media #{$media} and ($feature: $tablet) {
@@ -202,7 +201,7 @@ body {
     text-shadow: none;
 }
 
-/* 
+/*
  *	Typography
  */
 
@@ -240,7 +239,7 @@ blockquote {
 	max-width: 90%;
 	display: block;
 	float: left;
-	// margin-right: 2em;
+  font-size: 1rem;
 
 	& h3 span {
 		font-weight: 200;
@@ -262,7 +261,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	// max-width: 100%;
 	vertical-align: top !important;
 
-	
+
 	& p {
 		margin-top: 0;
 	}
@@ -288,7 +287,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	height: 150px;
 	// margin-right: 1em;
 	// margin-bottom: 1em;
-	
+
 	overflow: hidden;
 	& a {
 		@include opacity(0.6);
@@ -367,7 +366,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 	// add small screen responsive
 	// tablet
-	@media 
+	@media
 	#{$media} and ($feature: $tablet),
 	only screen and (-webkit-min-device-pixel-ratio : 1.5),
 	only screen and (min-device-pixel-ratio : 1.5)
@@ -380,7 +379,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		top: 48%;
 	}
 
-	
+
 
 
 }
@@ -403,7 +402,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
   }
   100% {
     background-color: $col_ui_dark;
-  } 
+  }
 }
 
 .anaglyph_toggle {
@@ -423,7 +422,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		text-align: center;
 		font-size: 24px;
 		padding-top: 15px;
-		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px; 
+		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px;
 
 		@include transition(all 0.3s ease-out);
 
@@ -438,7 +437,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 .strikethrough {
 	padding-top: 15px;
-	text-shadow: rgba(255,7,0,1) 0px 0px 0px, rgba(0,255,230,1) 0px 0px 0px !important; 
+	text-shadow: rgba(255,7,0,1) 0px 0px 0px, rgba(0,255,230,1) 0px 0px 0px !important;
 
 	& span {
 		position: absolute;
@@ -488,7 +487,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 
 .home, .intro, .experience, .design, .code, .footer, .resume, .skillset {
 	position: absolute;
-	width: 400px;
+	width: 500px;
 	max-width: 100%;
 }
 
@@ -497,8 +496,8 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 .design 	{ top: 2000px; }
 .experience	{ top: 3000px; }
 .code 		{ top: 4000px; }
-.resume		{ top: 5000px; } 
-.skillset	{ top: 6000px; } 
+.resume		{ top: 5000px; }
+.skillset	{ top: 6000px; }
 .footer		{ top: 7000px;}
 
 .home {
@@ -561,15 +560,35 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	}
 }
 
-.intro, .design, .code, .experience {
-	width: 400px;
+.intro {
+	width: 550px;
 	max-width: 75%;
 
 	margin-top: -200px;
 	margin-left: 10px;
 	// add small screen responsive
 	// tablet
-	@media 
+	@media
+	#{$media} and ($feature: $tablet)
+	{
+		margin-top: 0;
+	}
+
+	// desktop
+	@media #{$media} and ($feature: $desktop) {
+		margin-top: 0;
+	}
+}
+
+.design, .code, .experience {
+	width: 450px;
+	max-width: 75%;
+
+	margin-top: -200px;
+	margin-left: 10px;
+	// add small screen responsive
+	// tablet
+	@media
 	#{$media} and ($feature: $tablet)
 	{
 		margin-top: 0;
@@ -609,16 +628,33 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 	max-width: 100%;
 	display: block;
 	float: left;
+  font-size: 1rem;
+
+  & h2 {
+    font-size: 1rem;
+  }
+
+  ul {
+    text-indent: 0;
+    margin-left: 0;
+    padding-left: 1.5rem;
+  }
 }
 
 .footer {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1rem;
 	& h1, & p, & a {
 		color: $col_ui_darker !important;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
 	}
 }
 
 #portfolioDisplay {
-	
+
 	overflow: scroll;
 	background-color: transparentize($col_ui_darker, .1);
 	width: 100%;
@@ -639,7 +675,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 }
 
 .portfolio_item {
-	
+
 	overflow: scroll;
 	// background-color: transparentize($col_ui_darker, .2);
 	width: 100%;
@@ -716,7 +752,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		text-align: center;
 		font-size: 24px;
 		padding-top: 15px;
-		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px; 
+		text-shadow: rgba(255,7,0,1) -4px 0px 0px, rgba(0,255,230,1) 4px 0px 0px;
 
 		@include transition(all 0.3s ease-out);
 
@@ -726,4 +762,3 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
 		}
 	}
 }
-
