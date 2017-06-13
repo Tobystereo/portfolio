@@ -1,7 +1,7 @@
 @import "compass/css3";
-@import "h5bp";
-@include h5bp-normalize;
-@include h5bp-base-styles;
+// @import "h5bp";
+// @include h5bp-normalize;
+// @include h5bp-base-styles;
 @import "fonts";
 
 /*
@@ -646,7 +646,7 @@ $col_quotecode: mix($col_1, rgba(0,0,0,0));
   max-width: 100%;
   font-size: 1rem;
 	& h1, & p, & a {
-		color: $col_ui_darker !important;
+		color: $col_ui_lightest !important;
     text-align: center;
     width: 100%;
     max-width: 100%;
